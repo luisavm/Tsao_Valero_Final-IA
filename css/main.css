@@ -6,13 +6,13 @@
   display: none;
 }
 
-h1, h2
+h1
 {
 	text-align: center;
-	font-family: 'Muli', Helvetica, Arial, sans-serif;
+	font-family: 'Merriweather','New Times Roman', serif;
 }
 
-h3, p
+h2, h3, p
 {
 	text-align: center;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
