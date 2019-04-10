@@ -6,16 +6,27 @@
   display: none;
 }
 
-h1
+h1, h2
 {
 	text-align: center;
-	font-family: 'Merriweather','New Times Roman', serif;
+	
 }
 
-h2, h3, p
+.darkG
+{
+  font-family: 'Merriweather','New Times Roman', serif;
+  color: #5d7132;
+}
+
+h3, p
 {
 	text-align: center;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.lightG
+{
+  color: #9abd4b;
 }
 
 a:link, a:visited
@@ -239,16 +250,16 @@ html {
 
 #TRAA
 {
-	-webkit-animation: puff-in-center 0.7s, noshow 2.5s;
+	-webkit-animation: come-in 0.7s, noshow 2.5s;
 	-webkit-animation-delay: 2.5s, 0s;
 	transform-origin: center center;
 }
 
-@-webkit-keyframes puff-in-center {
+@-webkit-keyframes come-in {
   0% {
     letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-200px) translateY(-50px);
-            transform: translateZ(-200px) translateY(-50px);
+    -webkit-transform: translateZ(200px) translateY(50px);
+            transform: translateZ(200px) translateY(50px);
     opacity: 0;
   }
   40% {
