@@ -493,7 +493,7 @@ html {
   margin-top: 134px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 4px 0px #323035;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
   z-index: 4;
 }
 
@@ -546,7 +546,7 @@ html {
 .address, .address2, .country, .billE
 {
   -webkit-appearance: none;
-  border: solid 1px #8c8b8b;
+  border: solid 1px #cfcdd2;
   width: 203px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -570,6 +570,7 @@ html {
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
+  border: solid 1px #cfcdd2;
 }
 
 .billingInfo div
@@ -589,7 +590,7 @@ html {
 .creditcardN, .month, .year, .ccv, .paySubmit
 {
   -webkit-appearance: none;
-  border: solid 1px #8c8b8b;
+  border: solid 1px #cfcdd2;
   width: 203px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -620,11 +621,17 @@ html {
   border-radius: 10px;
   margin-right: 37px;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
 }
 
 .creditCards div:hover
 {
-  box-shadow: 0px 0px 4px 0px #323035;
+  box-shadow: 0px 0px 5px 0px #2b96d8;
+}
+
+.clickedBut
+{
+  box-shadow: 0px 0px 5px 0px #1f75aa;
 }
 
 .visa img
@@ -699,9 +706,19 @@ html {
   line-height: 15px;
 }
 
+.paymentM p, .paymentM div
+{
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+}
+
 .paymentM p:hover, .paymentM div:hover
 {
-  box-shadow: 0px 0px 4px 0px #323035;
+  box-shadow: 0px 0px 5px 0px #2b96d8;
+}
+
+.clickedBut
+{
+  box-shadow: 0px 0px 5px 0px #1f75aa;
 }
 
 .paySubmit
@@ -922,6 +939,7 @@ html {
   .socialMedia img
   {
     width: 8px;
+    height: 23px;
   }
 
   .socialMedia p
@@ -1472,45 +1490,6 @@ html {
     margin-left: 120px;
   }
 
-  /*.creditCards div, .paypal
-  {
-    width: 88px;
-  }*/
-
-  /*.visa img
-  {
-    width: 69px;
-  }
-
-  .master img
-  {
-    width: 75px;
-  }
-
-  .discover img
-  {
-    width: 86px;
-  }
-
-  .amex img
-  {
-    width: 83px;
-  }
-
-  .paypal img 
-  {
-    width: 68px;
-    margin: 16px 10px 14px 8px;
-  }
-
-  .paymentM p 
-  {
-    width: 66px;
-    height: 40px;
-    padding: 10px 15px 5px 15px;
-    line-height: 20px;
-  }*/
-
   #memTop
   {
     width: 457px;
@@ -1583,7 +1562,7 @@ html {
 
   .firstName
   {
-    margin-right: 34px;
+    margin-right: 30px;
   }
 
   .address, .address2, .country, .billE, .creditcardN
@@ -1598,6 +1577,7 @@ html {
   {
     margin-bottom: 52px;
     height: 33px;
+    font-size: 15px;
   }
 
   .CSC
@@ -1612,7 +1592,7 @@ html {
 
   .city, .province, .month, .year
   {
-    margin-right: 27px;
+    margin-right: 25px;
   }
 
   .billingInfo div
