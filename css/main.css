@@ -6,6 +6,11 @@
   display: none;
 }
 
+.sections
+{
+  border-top: 1px solid #000;
+}
+
 h1, h2
 {
 	text-align: center;
@@ -14,19 +19,33 @@ h1, h2
 
 .darkG
 {
-  font-family: 'Merriweather','New Times Roman', serif;
+  font-family: "Merriweather",'New Times Roman', serif;
   color: #5d7132;
+  letter-spacing: 0.6px;
+  font-size: 20px;
 }
 
 h3, p
 {
 	text-align: center;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #4d4747;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .lightG
 {
   color: #9abd4b;
+  letter-spacing: 0.6px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.blueT
+{
+  color: #1f75aa;
+  font-size: 15px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 a:link, a:visited
@@ -41,6 +60,7 @@ a:hover, a:active
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 #container
@@ -50,6 +70,8 @@ html {
 	border-left: 1px solid lightgrey;
 	border-right: 1px solid lightgrey;
 	max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*preload animation*/
@@ -274,3 +296,1334 @@ html {
 
 /*end of preload animation*/
 /***************************************************************/
+
+#mainHeader
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mainNav
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#mainNav button
+{
+  background: url(../images/menu.svg) center no-repeat;
+  width: 29px;
+  height: 15px;
+  border: 0;
+  transition: all 400ms ease;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.expanded
+{
+  display: none;
+}
+
+#leaveMenu
+{
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 10px;
+  right: 0;
+  color: #5d7132;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#burgerMenu
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainNav li a
+{
+  display: block;
+  padding: 10px 0 10px 0;
+  color: #5d7132;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+#mainNav li:first-child
+{
+  margin-top: 10px;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+#burgerMem
+{
+  background-color: #1f75aa;
+  padding: 15px 0 15px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#burgerCon p
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#burgerCon
+{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.slideToggle
+{
+  display: block !important;
+}
+
+#bgOverlay
+{
+  position: fixed;
+  display: block;
+  top: 269px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+
+/************************************************************/
+
+#mainHeader
+{
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+
+#headerLogo
+{
+  width: 97px;
+  margin-left: 10px;
+}
+
+#headerMem
+{
+  display: none;
+}
+
+#membership
+{
+  display: none;
+  border: 1px solid grey;
+}
+
+.showMem
+{
+  position: absolute;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+#leaveMem
+{
+  color: #fff;
+  position: absolute;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#memInfo
+{
+  position: relative;
+  height: 516px;
+  z-index: 99;
+}
+
+#memHero
+{
+  position: absolute;
+  width: 100%;
+}
+
+#memInfo h2
+{
+  width: 100%;
+  font-family: "Merriweather",'New Times Roman', serif;
+  position: absolute;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 62px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#memTop
+{
+  position: relative;
+  width: 214px;
+  background-color: #fff;
+  padding: 30px 10px 20px 12px;
+  margin-top: 134px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 4px 0px #323035;
+  z-index: 4;
+}
+
+#memTop p
+{
+  text-align: left;
+  line-height: 17px;
+  margin-bottom: 16px;
+}
+
+#memText
+{
+  width: 200px;
+}
+
+#memBot
+{
+  width: 100%;
+  position: absolute;
+  right: 0;
+  margin-top: -312px;
+}
+
+.memForm
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.memForm h3
+{
+  margin-bottom: 33px;
+  margin-top: 42px;
+}
+
+.billForm
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.billingInfo
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.address, .address2, .country, .billE
+{
+  -webkit-appearance: none;
+  border: solid 1px #8c8b8b;
+  width: 203px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billN, .CSC
+{
+  -webkit-appearance: none;
+}
+
+.firstName, .lastName, .city, .province, .postal-code
+{
+  width: 203px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billingInfo div
+{
+  width: 219px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.address, .address2, .country, .billE
+{
+  width: 203px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creditcardN, .month, .year, .ccv, .paySubmit
+{
+  -webkit-appearance: none;
+  border: solid 1px #8c8b8b;
+  width: 203px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billForm p
+{
+  margin-bottom: 33px;
+  margin-top: 20px;
+}
+
+.creditCards
+{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  margin-left: 75px;
+}
+
+.creditCards div
+{
+  width: 66px;
+  height: 43px;
+  border-radius: 10px;
+  margin-right: 37px;
+  margin-bottom: 30px;
+}
+
+.creditCards div:hover
+{
+  box-shadow: 0px 0px 4px 0px #323035;
+}
+
+.visa img
+{
+  width: 49px;
+  margin: 13px 12px 15px 6px;
+}
+
+.master
+{
+  background-color: #294577;
+}
+
+.master img
+{
+  width: 55px;
+  margin: 5px 5px 5px 6px;
+}
+
+.discover img
+{
+  width: 56px;
+  margin: 2px 3px 3px 6px;
+}
+
+.amex
+{
+  background-color: #3c7bbb;
+}
+
+.amex img
+{
+  width: 63px;
+  margin-top: 10px;
+}
+
+.cardInfo
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentM
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.paypal
+{
+  width: 66px;
+  height: 43px;
+  border-radius: 10px;
+}
+
+.paypal img
+{
+  width: 48px;
+  margin: 16px 10px 14px 8px;
+}
+
+.paymentM p
+{
+  margin-top: 0;
+  width: 46px;
+  height: 33px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  line-height: 15px;
+}
+
+.paymentM p:hover, .paymentM div:hover
+{
+  box-shadow: 0px 0px 4px 0px #323035;
+}
+
+.paySubmit
+{
+  width: 218px;
+  background-color: #1f75aa;
+  color: #fff;
+  letter-spacing: 0.6px;
+}
+
+.paySubmit:hover
+{
+  background-color: #2b96d8;
+}
+
+#memOverlay
+{
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#topButton
+{
+  width: 25px;
+  margin-left: auto;
+  margin-right: 13px;
+  margin-bottom: 5px;
+}
+
+#topButton p
+{
+  font-size: 12.32px;
+  line-height: 16px;
+}
+
+#mainFooter
+{
+  background-color: #676565;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainFooter p
+{
+  color: #fff;
+}
+
+#footerL, #footerR
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#footerM
+{
+  display: none;
+}
+
+#footerLogo
+{
+  width: 122px;
+  margin-top: 35px;
+  margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boldText
+{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#footerAp
+{
+  width: 290px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerL h2
+{
+  font-size: 12px;
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#newsSignup
+{
+  font-size: 14px;
+  margin-top: 56px;
+  margin-bottom: 17px;
+}
+
+#footerRp
+{
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#emailForm
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#footerE
+{
+  color: #fff;
+  width: 215px;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  border: solid 1px #8c8b8b;
+  background-color: #8c8b8b;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#subscribe
+{
+  width: 228px;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1f75aa;
+  -webkit-appearance: none;
+  border: solid 1px #1f75aa;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+}
+
+.socialMedia, .socialMediaF
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 42px;
+  margin-top: 25px;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.FB
+{
+  width: 10px;
+}
+
+.FB .st0:hover, .YT:hover .st0
+{
+  fill: skyblue;
+}
+
+.YT
+{
+  width: 20px;
+}
+
+.sections
+{
+  height: 600px;
+}
+
+/***********************************************************/
+
+@media screen and (min-width: 550px) {
+  #mainHeader
+  {
+    margin-top: 31px;
+    margin-bottom: 25px;
+  }
+
+  #mainNav
+  {
+    width: 31px;
+    margin-left: 15px;
+  }
+
+  #headerMem
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+  }
+
+  #headerLogo
+  {
+    width: 128px;
+    margin-left: 16px;
+  }
+
+  .socialMedia
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 160px;
+    margin-bottom: 15px;
+  }
+
+  .socialMedia img
+  {
+    width: 8px;
+  }
+
+  .socialMedia p
+  {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-right: 5px;
+    letter-spacing: 0.7px;
+  }
+  .FB
+  {
+    width: 8px;
+    margin-top: 4px;
+  }
+
+  .FB .cls-44:hover, .YT:hover .cls-44
+  {
+    fill: skyblue;
+  }
+
+  .YT
+  {
+    width: 19px;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  #memButton
+  {
+    width: 153px;
+    height: 47px;
+    margin-left: 7px;
+    background-color: #1f75aa;
+  }
+
+  #memButton:hover
+  {
+    background-color: #2b96d8;
+  }
+
+  #memButton p
+  {
+    margin-top: 17px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mainFooter
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #footerLogo
+  {
+    width: 122px;
+  }
+
+  #footerM
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120px;
+    margin-top: 63px;
+    margin-bottom: 56px;
+  }
+
+  #footerM ul li
+  {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #footerM ul li a
+  {
+    color: #fff;
+    font-size: 12px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+  }
+
+  #footerM ul li a:hover
+  {
+    color: #2b96d8;
+  }
+
+  #newsSignup
+  {
+    margin-top: 66px;
+  }
+
+  #footerRp
+  {
+    margin-bottom: 30px;
+  }
+
+  .socialMediaF
+  {
+    margin-top: 30px;
+  }
+
+  #topButton
+  {
+    position: fixed;
+    right: 21px;
+    bottom: 34px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  #mainHeader
+  {
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
+
+  #headerLogo
+  {
+    margin-left: 25px;
+    width: 162px; 
+  }
+
+  #headerMem
+  {
+    width: 185px;
+    margin-top: 0px;
+  }
+
+  .socialMedia
+  {
+    width: 185px;
+    margin-bottom: 22px;
+  }
+
+  .socialMediaF
+  {
+    width: 53px;
+  }
+
+  .socialMedia img
+  {
+    width: 9px;
+  }
+
+  .socialMedia p
+  {
+    font-size: 15px;
+    margin-top: 6px;
+    margin-right: 7px;
+  }
+
+  .FB
+  {
+    width: 10px;
+    margin-top: 4px;
+  }
+
+  .YT
+  {
+    width: 21px;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  #newsSignup
+  {
+    font-size: 18px;
+  }
+
+  #footerRp
+  {
+    font-size: 14px;
+  }
+
+  #memButton
+  {
+    width: 179px;
+    height: 55px;
+  }
+
+  #memButton p
+  {
+    margin-top: 22px;
+  }
+
+  #navButton
+  {
+    display: none;
+  }
+
+  #burgerCon
+  {
+    display: block;
+    position: relative;
+  }
+
+  #leaveMenu, #burgerMem, #bgOverlay
+  {
+    display: none;
+  }
+
+  #mainNav
+  {
+    width: 546px;
+    margin-left: 0px;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 67px;
+  }
+
+  #mainNav ul li a
+  {
+    color: #636363;
+    padding: 5px;
+    display: inline-block;
+    /*border-left: 1px solid #9abd4b;*/
+    padding-left: 15px;
+  }
+
+  #mainNav ul li a:after
+  {
+      display:block;
+      content: '';
+      border-bottom: solid 3px #9abd4b;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      transform-origin:100% 50%
+  }
+  #mainNav ul li a:hover:after {
+      transform: scaleX(1);
+      transform-origin:0 50%;
+  }
+
+  #mainNav ul li a:hover
+  {
+    color: #9abd4b;
+  }
+
+  #burgerMenu
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #mainNav ul li:first-child
+  {
+    margin-top: 0px;
+  }
+
+  #topButton
+  {
+    width: 35px;
+    right: 70px;
+    bottom: 35px;
+  }
+
+  #footerM ul li a
+  {
+    font-size: 15px;
+  }
+
+  #footerE
+  {
+    width: 255px;
+    padding-left: 15px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #subscribe
+  {
+    width: 270px;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .boldText
+  {
+    font-size: 17px;
+  }
+
+  #footerAp
+  {
+    font-size: 15px;
+    width: 332px;
+  }
+
+  #footerL h2
+  {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  #memHero
+  {
+    padding-left: 1200px;
+    background: url(../images/boat_bright_2.jpg) no-repeat;
+  }
+
+  #memBot
+  {
+    width: 234px;
+    margin-left: 10px;
+    right: 10px;
+    margin-top: -212px;
+  }
+
+  #memTop
+  {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #memInfo
+  {
+    height: 600px;
+  }
+
+  #memInfo h2
+  {
+    font-size: 35px;
+  }
+
+  #memBot
+  {
+    width: 350px;
+    margin-top: -262px;
+    margin-right: 20px;
+  }
+
+  #memTop
+  {
+    margin-top: 150px;
+  }
+
+  .creditCards
+  {
+    width: 345px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .creditCards div
+  {
+    margin-right: 0;
+  }
+
+  .paymentM
+  {
+    width: 285px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .memForm h3
+  {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #memInfo
+  {
+    height: 800px;
+  }
+
+  #memTop
+  {
+    width: 300px;
+    margin-top: 245px;
+    margin-left: 81px;
+    padding: 43px 42px 8px 26px;
+  }
+
+  #memBot
+  {
+    width: 451px;
+    margin-top: -300px;
+    right: 30px;
+  }
+
+  #memInfo h2
+  {
+    margin-top: 120px;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #memInfo
+  {
+    height: 760px;
+  }
+
+  #memTop p
+  {
+    margin-bottom: 20px;
+  }
+
+  .darkG
+  {
+    font-size: 30px;
+  }
+
+  .lightG
+  {
+    font-size: 20px;
+  }
+
+  #memText
+  {
+    width: 299px;
+  }
+
+  #memBot
+  {
+    position: relative;
+    padding-left: 1200px;
+    background: url(../images/boat_deck_calm_2.jpg) no-repeat;
+    margin-top: -280px;
+    margin-left: 246px;
+  }
+
+  .billN, .cardInfo
+  {
+    width: 545px;
+    flex-direction: row;
+  }
+  
+  .cardInfo
+  {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .firstName, .lastName
+  {
+    width: 230px;
+  }
+
+  .firstName
+  {
+    margin-right: 47px;
+  }
+
+  .address, .address2, .country, .billE, .creditcardN
+  {
+    width: 529px;
+    margin-bottom: 40px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  .firstName, .lastName, .city, .province, .postal-code, .month, .year, .ccv
+  {
+    margin-bottom: 40px;
+    height: 22px;
+  }
+
+  .CSC
+  {
+    flex-direction: row;
+    width: 545px;
+  }
+
+  .city, .province, .postal-code, .month, .year, .ccv
+  {
+    width: 151px;
+  }
+
+  .city, .province, .month, .year
+  {
+    margin-right: 17px;
+  }
+
+  .billingInfo div
+  {
+    width: 545px;
+  }
+
+  .paySubmit
+  {
+    width: 167px;
+    margin-bottom: 60px; 
+    margin-top: 20px;
+    height: 42px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #memHero
+  {
+    background: url(../images/boat_bright_3.jpg) no-repeat;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #memTop
+  {
+    margin-left: 181px;
+  }
+
+  #memBot
+  {
+    margin-left: 346px;
+  }
+}
+
+@media screen and (min-width: 972px) {
+  #membership
+  {
+    width: 972px;
+    margin-left: 3%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  #membership
+  {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #membership
+  {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #membership
+  {
+    margin-left: 120px;
+  }
+
+  /*.creditCards div, .paypal
+  {
+    width: 88px;
+  }*/
+
+  /*.visa img
+  {
+    width: 69px;
+  }
+
+  .master img
+  {
+    width: 75px;
+  }
+
+  .discover img
+  {
+    width: 86px;
+  }
+
+  .amex img
+  {
+    width: 83px;
+  }
+
+  .paypal img 
+  {
+    width: 68px;
+    margin: 16px 10px 14px 8px;
+  }
+
+  .paymentM p 
+  {
+    width: 66px;
+    height: 40px;
+    padding: 10px 15px 5px 15px;
+    line-height: 20px;
+  }*/
+
+  #memTop
+  {
+    width: 457px;
+    margin-top: 302px;
+    margin-left: 100px;
+    padding: 52px 45px 10px 31px;
+  }
+
+  #memInfo h2
+  {
+    margin-top: 120px;
+    font-size: 45px;
+  }
+
+  #memInfo
+  {
+    height: 940px;
+  }
+
+  #memTop p
+  {
+    margin-bottom: 23px;
+    line-height: 30px;
+  }
+
+  .darkG
+  {
+    font-size: 42px;
+  }
+
+  .lightG
+  {
+    font-size: 30px;
+    word-spacing: 3px;
+  }
+
+  #memTop p:nth-child(2n)
+  {
+    width: 341px;
+  }
+
+  #memText
+  {
+    width: 380px;
+  }
+
+  #memText p
+  {
+    font-size: 18px;
+  }
+
+  #memBot
+  {
+    width: 580px;
+    background: url(../images/boat_deck_calm_3.jpg) no-repeat;
+    margin-top: -500px;
+    margin-left: 350px;
+    height: 524px;
+  }
+
+  .billN, .cardInfo
+  {
+    width: 675px;
+  }
+
+  .firstName, .lastName
+  {
+    width: 302px;
+  }
+
+  .firstName
+  {
+    margin-right: 34px;
+  }
+
+  .address, .address2, .country, .billE, .creditcardN
+  {
+    width: 660px;
+    margin-bottom: 52px;
+    height: 33px;
+    font-size: 15px;
+  }
+
+  .firstName, .lastName, .city, .province, .postal-code, .month, .year, .ccv
+  {
+    margin-bottom: 52px;
+    height: 33px;
+  }
+
+  .CSC
+  {
+    width: 675px;
+  }
+
+  .city, .province, .postal-code, .month, .year, .ccv
+  {
+    width: 188px;
+  }
+
+  .city, .province, .month, .year
+  {
+    margin-right: 27px;
+  }
+
+  .billingInfo div
+  {
+    width: 675px;
+  }
+
+  .paySubmit
+  {
+    width: 187px;
+    margin-bottom: 86px; 
+    height: 54px;
+  }
+}
