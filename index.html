@@ -20,8 +20,8 @@
 			<img src="images/traa_logo.svg" alt="TRAA logo" id="headerLogo">
 			<nav id="mainNav">
 	          <h2 class="hidden">Main Navigation</h2>
-	          <button id="navButton"></button>
 	          <div id="burgerCon">
+	          	<a href="#" id="leaveMenu">X</a>
 	            <ul id="burgerMenu">
 	              <li><a href="index.html">HOME</a></li>
 	              <li><a href="about_us.html">ABOUT</a></li>
@@ -30,82 +30,99 @@
 	              <li><a href="links.html">LINKS</a></li>
 	              <li><a href="contact.html">CONTACT US</a></li>
 	            </ul>
+	            <a href="#" id="burgerMem" class="membershipBut">MEMBERSHIP</a>
+	            <div id="bgOverlay" class="hidden"></div>
 	          </div>
+	          <button id="navButton" class=""></button>
         	</nav>
         	<div id="headerMem">
         		<div class="socialMedia">
 	        		<img src="images/phone.svg" alt="phone icon" id="phoneCon">
 	        		<p id="phoneN">519.630.1892</p>
-	        		<img src="images/blue_facebook.svg" alt="facebook icon" id="headerFB">
-	        		<img src="images/blue_youtube.svg" alt="youtube icon" id="headerYT">
+	        		<a href="https://www.facebook.com/groups/4TRAA/?ref=share"><svg class="FB" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.4 26.5"><defs><style>.cls-44{fill:#087bc1;fill-rule:evenodd;}</style></defs><title>blue_facebook</title><path id="facebook" class="cls-44" d="M8.2,7.9V5.8A1.18,1.18,0,0,1,9.4,4.5h3V0H8.2A5.21,5.21,0,0,0,2.6,5.5V7.9H0v5.3H2.7V26.5H8V13.2h3.9l.2-2.1.3-3.2Z"/></svg></a>
+	        		<a href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"><svg class="YT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-44{fill:#1f75aa;}</style></defs><title>blue_youtube</title><path class="cls-44" d="M23,20.2a.76.76,0,0,0-.5.2,1.17,1.17,0,0,0-.2.7v.8h1.3v-.8a1.17,1.17,0,0,0-.2-.7C23.4,20.3,23.3,20.2,23,20.2Z"/><path class="cls-44" d="M17.8,20.2a.37.37,0,0,0-.3.1c-.1.1-.2.1-.3.2v4.8a1.38,1.38,0,0,0,.4.3c.1.1.2.1.4.1a.52.52,0,0,0,.4-.2.75.75,0,0,0,.1-.5V21a.85.85,0,0,0-.2-.6C18.2,20.2,18,20.2,17.8,20.2Z"/><path class="cls-44" d="M24.5,14H5.5A5.84,5.84,0,0,0,0,19.9v4.5A5.57,5.57,0,0,0,5.5,30h19A5.57,5.57,0,0,0,30,24.4V19.9A5.84,5.84,0,0,0,24.5,14Zm-15,3.8H7.7v9H6v-9H4.2V16.3H9.4v1.5Zm5,9H13v-.9a2.76,2.76,0,0,1-.9.7,1.49,1.49,0,0,1-.9.2,1,1,0,0,1-.8-.3,1.49,1.49,0,0,1-.3-1V19h1.5v6c0,.2,0,.3.1.4a.37.37,0,0,0,.3.1.76.76,0,0,0,.4-.2,1.76,1.76,0,0,0,.5-.4V19h1.5l.1,7.8ZM20,25.2a1.84,1.84,0,0,1-.4,1.3,1.16,1.16,0,0,1-1,.4,1.88,1.88,0,0,1-.8-.2,2.65,2.65,0,0,1-.6-.5v.6H15.7V16.3h1.5v3.4a1.79,1.79,0,0,1,.7-.5,1.85,1.85,0,0,1,.7-.2,1.43,1.43,0,0,1,1.1.5,2.08,2.08,0,0,1,.4,1.5v4.2Zm5.2-2.1H22.3v1.5a2.22,2.22,0,0,0,.1.9c.1.2.3.2.5.2a.59.59,0,0,0,.5-.2,1.44,1.44,0,0,0,.2-.9v-.4h1.6v.4a2.44,2.44,0,0,1-.6,1.8A2,2,0,0,1,23,27a2.11,2.11,0,0,1-1.6-.6,2.44,2.44,0,0,1-.6-1.8V21.1a2.11,2.11,0,0,1,.6-1.6,2.35,2.35,0,0,1,1.7-.6,2.11,2.11,0,0,1,1.6.6,2.35,2.35,0,0,1,.6,1.7v1.9Z"/><polygon class="cls-44" points="5.7 0 8 7 8 11.6 9.9 11.6 9.9 6.8 12.1 0 10.2 0 9 4.6 8.9 4.6 7.6 0 5.7 0"/><path class="cls-44" d="M13,3.4A1.86,1.86,0,0,0,12.3,5V9.4a2.06,2.06,0,0,0,.7,1.7,2.61,2.61,0,0,0,1.8.6,2.44,2.44,0,0,0,1.8-.6,2.41,2.41,0,0,0,.7-1.7V5a1.86,1.86,0,0,0-.7-1.6,2.52,2.52,0,0,0-1.7-.6A2.55,2.55,0,0,0,13,3.4Zm2.5,1.5V9.6a.76.76,0,0,1-.2.5.85.85,0,0,1-.6.2.68.68,0,0,1-.7-.7V4.9c0-.2.1-.3.2-.5a.72.72,0,0,1,1,0C15.4,4.6,15.5,4.7,15.5,4.9Z"/><path class="cls-44" d="M23.5,11.6V3H21.8V9.5l-.5.5a1.69,1.69,0,0,1-.5.2c-.2,0-.3,0-.3-.1s-.1-.2-.1-.4V3H18.7v7.1a1.61,1.61,0,0,0,.3,1.1,1,1,0,0,0,.9.4,1.93,1.93,0,0,0,1-.3,3.51,3.51,0,0,0,1-.8v.9h1.6Z"/></svg></a>
         		</div>
-        		<a href="#" id="memButton">MEMBERSHIP</a>
+        		<a href="#" id="memButton" class="membershipBut"><p>MEMBERSHIP</p></a>
         	</div>
 		</header>
 
-		<section id="membership">
+		<section id="membership" class="">
 			<div id="memInfo">
 				<img src="images/boat_bright_1.jpg" alt="sunset image" id="memHero">
+				<a href="#" id="leaveMem">X</a>
 				<h2>TRAA Memberships</h2>
 				<div id="memTop">
 					<p class="darkG">Membership</p>
 					<p class="lightG">This is the Best Membership Deal You can Buy!!</p>
-					<p>You get to be a TRAA MEMBER for a whole year for only $25</p>
-					<p>Your membership also adds another voice to our efforts in protecting and enhancing aquatic habitats in the London & area community.</p>
-					<p>You’ve taken a lot of enjoyment from this unique fishery. It’s time to give back by beign part of the solution.</p>
+					<div id="memText">
+						<p>You get to be a TRAA MEMBER for a whole year for only $25</p>
+						<p>Your membership also adds another voice to our efforts in protecting and enhancing aquatic habitats in the London & area community.</p>
+						<p>You’ve taken a lot of enjoyment from this unique fishery. It’s time to give back by beign part of the solution.</p>
+					</div>
 				</div>
 				<img src="images/boat_deck_calm_1.jpg" alt="sunset river side" id="memBot">
 			</div>
-			<div id="memForm">
+			<div class="memForm">
 				<h3 class="lightG">Billing Information</h3>
-				<form>
-					<div id="billingInfo">
-						<div id="billN">
-						<input type="text" name="first-name" required id="fisrtName" placeholder="First Name" required>
-						<input type="text" name="last-name" id="lastName" placeholder="Last Name" required>
+				<form class="billForm">
+					<div class="billingInfo">
+						<div class="billN">
+							<input type="text" name="first-name" required class="firstName" placeholder="First Name">
+							<input type="text" name="last-name" class="lastName" placeholder="Last Name" required>
 						</div>
-						<input type="text" name="address" id="address" placeholder="Address" required>
-						<input type="text" name="address2" id="address2" placeholder="Address 2">
-						<div id="CSC">
-							<input type="text" name="city" id="city" placeholder="City" required>
-							<input type="text" name="province" id="province" placeholder="Province" required>
-							<input type="text" name="postal-code" id="postal-code" placeholder="Postal Code" required>
+						<input type="text" name="address" class="address" placeholder="Address" required>
+						<input type="text" name="address2" class="address2" placeholder="Address 2">
+						<div class="CSC">
+							<input type="text" name="city" class="city" placeholder="City" required>
+							<input type="text" name="province" class="province" placeholder="Province" required>
+							<input type="text" name="postal-code" class="postal-code" placeholder="Postal Code" required>
 						</div>
-						<input type="text" name="country" id="country" placeholder="Country" required>
-						<input type="email" name="email" id="billE" placeholder="Email" required>
+						<input type="text" name="country" class="country" placeholder="Country" required>
+						<input type="email" name="email" class="billE" placeholder="Email" required>
 					</div>
 					<p class="lightG">Payment Information</p>
-					<div id="creditCards">
+					<div class="creditCards">
+						<div class="visa">
 						<img src="images/visa_1.png" alt="visa">
+						</div>
+						<div class="master">
 						<img src="images/master_card_1.png" alt="master card">
+						</div>
+						<div class="discover">
 						<img src="images/discover_1.png" alt="discover">
+						</div>
+						<div class="amex">
 						<img src="images/amex_1.png" alt="american express">
+						</div>
 					</div>
 					<p class="blueT">Payment Method</p>
-					<div id="paymentM">
-						<img src="images/paypal_1.png" alt="paypal" id="paypal">
+					<div class="paymentM">
+						<div class="paypal">
+						<img src="images/paypal_1.png" alt="paypal">
+						</div>
 						<p>Credit Card</p>
 						<p>Debit Card</p>
 					</div>
-					<input type="text" name="credit-card-number" id="creditcardN" placeholder="Debit or Credit Card Number" required>
-					<div id="cardInfo">
-						<input type="text" name="month" id="month" placeholder="Month" required>
-                		<input type="text" name="year" id="year" placeholder="Year" required>
-               			<input type="text" name="ccv" id="ccv" placeholder="CCV Number" required>
+					<input type="text" name="credit-card-number" class="creditcardN" placeholder="Debit or Credit Card Number" required>
+					<div class="cardInfo">
+						<input type="text" name="month" class="month" placeholder="Month" required>
+                		<input type="text" name="year" class="year" placeholder="Year" required>
+               			<input type="text" name="ccv" class="ccv" placeholder="CCV Number" required>
 					</div>
-					<input type="submit" name="submit" value="SUBMIT" id="submit">
+					<input type="submit" name="submit" value="SUBMIT" class="paySubmit">
 				</form>
 			</div>
+			<div id="memOverlay"></div>
 		</section>
 		
 		<section class="sections">
-			<h2></h2>
+			<h2>1</h2>
 		</section>
 		<section class="sections">
-			<h2></h2>
+			<h2>2</h2>
 		</section>
 		<section class="sections">
-			<h2></h2>
+			<h2>3</h2>
 		</section>
 
 		<a href="#" id="topButton">
@@ -114,14 +131,13 @@
 
 		<footer id="mainFooter">
 			<div id="footerL">
-				<img src="images/traa_logo.svg" alt="TRAA logo" id="footerLogo">
+				<img src="images/white_traa_logo.svg" alt="TRAA logo" id="footerLogo">
 				<p class="boldText">Thames River Anglers Association</p>
-				<p>790 Southdale Road East, London, Ontario, N6E 1A8</p>
+				<p id="footerAp">790 Southdale Road East, London, Ontario, N6E 1A8</p>
 				<h2>©2019. All Rights Reserved.</h2>
 			</div>
 			<div id="footerM">
 				<ul id="footerMenu">
-	              <li><a href="index.html">Home</a></li>
 	              <li><a href="about_us.html">About</a></li>
 	              <li><a href="projects.html">Projects</a></li>
 	              <li><a href="newsletters.html">Newsletters</a></li>
@@ -134,13 +150,16 @@
 			</div>
 			<div id="footerR">
 				<p id="newsSignup">Newsletter Signup</p>
-				<p>Subscribe to get updates about the TRAA</p>
+				<p id="footerRp">Subscribe to get updates about the TRAA</p>
 				<form action="form.php" method="post" id="emailForm">
 					<input type="email" required id="footerE" placeholder="Enter your email">
-					<input id="submit" type="submit" value="SUBSCRIBE">
-					<div class="socialMedia">
-						<img src="images/white_facebook.svg" alt="facebook icon" id="whiteFB">
-						<img src="images/white_youtube.svg" alt="youtube icon" id="whiteYT">
+					<input id="subscribe" type="submit" value="SUBSCRIBE">
+					<div class="socialMediaF">
+						<a href="https://www.facebook.com/groups/4TRAA/?ref=share"><svg class="FB" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.4 26.5" style="enable-background:new 0 0 12.4 26.5;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><path class="st0" d="M8.2,7.9V5.8c0-1,0.7-1.3,1.2-1.3c0.5,0,3,0,3,0V0H8.2C3.7,0,2.6,3.4,2.6,5.5v2.4H0v3.2v2.1h2.7
+						c0,6,0,13.3,0,13.3H8c0,0,0-7.3,0-13.3h3.9l0.2-2.1l0.3-3.2H8.2z"/></svg>
+						</a>
+						<a href="https://www.youtube.com/channel/UCSuwqQ-HzLQw-gylALz5YkA"><svg  class="YT" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><path class="st0" d="M23,20.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.2,0.4-0.2,0.7v0.8h1.3v-0.8c0-0.3-0.1-0.6-0.2-0.7C23.4,20.3,23.3,20.2,23,20.2z"/><g><path class="st0" d="M17.8,20.2c-0.1,0-0.2,0-0.3,0.1c-0.1,0.1-0.2,0.1-0.3,0.2v4.8c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.3-0.1,0.4-0.2c0.1-0.1,0.1-0.3,0.1-0.5v-4c0-0.3-0.1-0.5-0.2-0.6C18.2,20.2,18,20.2,17.8,20.2z"/><g><path class="st0" d="M24.5,14h-19c-3,0-5.5,2.8-5.5,5.9v4.5C0,27.5,2.5,30,5.5,30h19c3,0,5.5-2.5,5.5-5.6v-4.5C30,16.8,27.5,14,24.5,14z M9.5,17.8H7.7v9H6v-9H4.2v-1.5h5.2V17.8z M14.5,26.8H13v-0.9c-0.3,0.3-0.6,0.6-0.9,0.7c-0.3,0.2-0.6,0.2-0.9,0.2c-0.4,0-0.6-0.1-0.8-0.3c-0.2-0.2-0.3-0.6-0.3-1V19h1.5v6c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.3-0.1,0.4-0.2c0.2-0.1,0.3-0.2,0.5-0.4V19h1.5V26.8z M20,25.2c0,0.5-0.1,1-0.4,1.3c-0.2,0.3-0.6,0.4-1,0.4c-0.3,0-0.6-0.1-0.8-0.2c-0.2-0.1-0.4-0.3-0.6-0.5v0.6h-1.5V16.3h1.5v3.4c0.2-0.2,0.4-0.4,0.7-0.5c0.2-0.1,0.5-0.2,0.7-0.2c0.5,0,0.8,0.2,1.1,0.5c0.3,0.3,0.4,0.8,0.4,1.5V25.2z M25.2,23.1h-2.9v1.5c0,0.4,0,0.7,0.1,0.9c0.1,0.2,0.3,0.2,0.5,0.2c0.3,0,0.4-0.1,0.5-0.2c0.1-0.1,0.2-0.4,0.2-0.9v-0.4h1.6v0.4c0,0.8-0.2,1.4-0.6,1.8C24.3,26.8,23.7,27,23,27c-0.7,0-1.2-0.2-1.6-0.6c-0.4-0.4-0.6-1-0.6-1.8v-3.5c0-0.7,0.2-1.2,0.6-1.6c0.4-0.4,1-0.6,1.7-0.6c0.7,0,1.2,0.2,1.6,0.6c0.4,0.4,0.6,1,0.6,1.7V23.1z"/><polygon class="st0" points="5.7,0 8,7 8,11.6 9.9,11.6 9.9,6.8 12.1,0 10.2,0 9,4.6 8.9,4.6 7.6,0"/><path class="st0" d="M13,3.4c-0.5,0.4-0.7,0.9-0.7,1.6v4.4c0,0.7,0.2,1.3,0.7,1.7c0.5,0.4,1,0.6,1.8,0.6c0.8,0,1.4-0.2,1.8-0.6c0.4-0.4,0.7-1,0.7-1.7V5c0-0.7-0.2-1.2-0.7-1.6c-0.5-0.4-1-0.6-1.7-0.6C14,2.8,13.4,3,13,3.4z M15.5,4.9v4.7c0,0.2-0.1,0.4-0.2,0.5c-0.1,0.1-0.3,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.5-0.2C14.1,10,14,9.8,14,9.6V4.9c0-0.2,0.1-0.3,0.2-0.5c0.1-0.1,0.3-0.2,0.5-0.2c0.2,0,0.4,0.1,0.5,0.2C15.4,4.6,15.5,4.7,15.5,4.9z"/><path class="st0" d="M23.5,11.6V3h-1.7v6.5c-0.2,0.2-0.3,0.3-0.5,0.5c-0.2,0.1-0.4,0.2-0.5,0.2c-0.2,0-0.3,0-0.3-0.1c-0.1-0.1-0.1-0.2-0.1-0.4V3h-1.7v7.1c0,0.5,0.1,0.9,0.3,1.1c0.2,0.3,0.5,0.4,0.9,0.4c0.3,0,0.7-0.1,1-0.3c0.3-0.2,0.7-0.4,1-0.8v0.9H23.5z"/></g></g></g></svg>
+						</a>
 					</div>
 				</form>
 			</div>

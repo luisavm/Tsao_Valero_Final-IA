@@ -1,6 +1,6 @@
 (() => {
 
-	console.log("Linked up");
+	console.log("Linked up"); 
 
  	let anchorLink = document.querySelector("#topButton"),
 		top = document.getElementById("mainHeader");
@@ -22,7 +22,7 @@
 	if (sessionStorage.getItem("logoAnimated") === null) {
 		logoAni.classList.add("logoAni");
 	} else {
-		return;
+		logoAni.classList.add("hidden");
 	}
 		setTimeout(function() {
 			logoAni.classList.remove("logoAni");
@@ -31,12 +31,28 @@
 
 
 	let button = document.querySelector("#navButton"),
-		burgerCon = document.querySelector("#burgerCon");
+		burgerCon = document.querySelector("#burgerCon"),
+		leaveMenu = document.querySelector("#leaveMenu"),
+		burgerOverlay = document.querySelector("#bgOverlay");
 
-	function hamburgerMenu() {
-		burgerCon.classList.toggle("slideToggle");
-		button.classList.toggle("expanded");
+	function hamburgerMenu(){
+	console.log("menu button clicked");
+	burgerCon.classList.add("slideToggle");
+	button.classList.add("expanded");
+	burgerOverlay.classList.remove("hidden");
 	}
+
+	button.addEventListener("click", hamburgerMenu);
+	
+
+	function exitMenu() {
+		console.log("close menu clicked");
+		burgerCon.classList.remove("slideToggle");
+		button.classList.remove("expanded");
+		burgerOverlay.classList.add("hidden");
+	}
+	
+	leaveMenu.addEventListener("click", exitMenu);
 
 	function closeMenu() {
 
@@ -45,12 +61,29 @@
 		burgerCon.classList.remove('slideToggle');
 		button.classList.remove('expanded');
 		}
-
 	}
 
-	button.addEventListener("click", hamburgerMenu, false);
-
 	window.addEventListener("resize", closeMenu);
+
+	let membershipBut = document.querySelectorAll(".membershipBut"),
+		membershipPage = document.querySelector("#membership"),
+		leaveMemB = document.querySelector("#leaveMem");
+
+	function showMem() {
+		console.log("show membership page")
+		membershipPage.classList.add("showMem");
+		burgerCon.classList.remove('slideToggle');
+		button.classList.remove('expanded');
+	}
+
+	membershipBut.forEach(membershipButton => membershipButton.addEventListener("click", showMem));
+
+	function leaveMem() {
+		console.log("close membership page")
+		membershipPage.classList.remove("showMem");
+	}
+
+	leaveMemB.addEventListener("click", leaveMem);
 
 })();
 
