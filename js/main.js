@@ -68,14 +68,6 @@
 		}
 	}
 
-	let clickTob = document.querySelectorAll(".clickTob");
-
-	function clickButton() {
-		console.log("payment method selected");
-		clickTo.classList.add("clickedBut");
-	}
-
-	clickTob.forEach(clickTo => clickTo.addEventListener("click", clickButton));
 
 	window.addEventListener("resize", closeMenu);
 
@@ -83,23 +75,33 @@
 		membershipPage = document.querySelector("#membership"),
 		leaveMemB = document.querySelector("#leaveMem");
 
+	
+
 	function showMem() {
 		console.log("show membership page");
 		membershipPage.classList.add("showMem");
 		burgerCon.classList.remove('slideToggle');
 		button.classList.remove('expanded');
-	}
 
-	
-	
-	leaveMemB.addEventListener("click", leaveMem);
-	membershipBut.forEach(membershipButton => membershipButton.addEventListener("click", showMem));
+
+	}
+	const	clickTo = document.querySelectorAll(".clickToB");
+
+		clickTo.forEach(clickT => clickT.addEventListener("click", function(e) {
+		console.log("payment method selected");
+		e.currentTarget.classList.toggle("clickedBut");
+	}));
 
 	function leaveMem() {
 		console.log("close membership page");
 		membershipPage.classList.remove("showMem");
 	}
+	
+	leaveMemB.addEventListener("click", leaveMem);
+	membershipBut.forEach(membershipButton => membershipButton.addEventListener("click", showMem));
 
+
+	
 	
 
 })();
