@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather%7CRoboto" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -118,39 +119,51 @@
 		<section class="sections">
 			<h2 class="hidden">Welcome to the TRAA</h2>
 			<div id="homeHero">
-				<p id="heroHead">Welcome to the TRAA</p>
-				<h3>Dedication Todayfor Tomorrow</h3>
+				<p id="heroHead">Welcome<br>to the TRAA</p>
+				<h3>Dedication Today for Tomorrow</h3>
 				<div id="greenQuote">
-					<div id="startQ"></div>
-					<div id="endQ"></div>
-					<p>For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed.</p>
+					<div id="quoteBehind">
+						<div id="quoteRow">
+							<div id="startQ"></div>
+							<div id="endQ"></div>
+						</div>
+						<p>For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed.</p>
+					</div>
 				</div>
 			</div>
 			<div id="fundraising">
 				<h2 class="darkG">Fundraising</h2>
-				<p class="lightG">Your money can improve the Thame River</p>
-				<p>Efforts are underway to get the fundraising we need to continue many of the TRAA's most vital projects:  improvement to the TRAA Trout Hatchery and Continuation of the Salmonid Monitoring Program.</p>
+				<p class="lightG" id="fundH2">Your money can improve the Thames River</p>
+				<p>Efforts are underway to get the fundraising we need to continue many of the TRAA's most vital projects:  improvement to the <a href="projects.html">TRAA Trout Hatchery</a> and Continuation of the <a href="projects.html">Salmonid Monitoring Program</a>.</p>
 				<a href="#" id="fundBut">FUND NOW</a>
 			</div>
 			<div id="fundBot"></div>
-			<section id="fundPage">
+			<section id="fundPage" class="">
+				<a href="#" id="exitFund">X</a>
 				<div id="fundVideo">
-					
+					<video id="videoFund" muted autoplay controls>
+						<source id="videoS" src="video/fund_video_mobile.mp4">
+						Sorry, your browser doesn't support embeded videos...
+					</video>
 				</div>
 				<div id="fundForm">
-				<h3 class="lightG">Billing Information</h3>
 				<form class="billForm">
 					<div id="fundAmount">
 						<p class="lightG">Choose Fund Amount</p>
-						<div class="moneyOp"><p>$25</p></div>
-						<div class="moneyOp"><p>$50</p></div>
-						<div class="moneyOp"><p>$70</p></div>
-						<div class="moneyOp"><p>$90</p></div>
-						<input type="Number" name="selfAmount" placeholder="Enter an amount" id="selfAmount">
+						<div id="amountOps">
+							<div class="moneyOp clickToB"><p>$25</p></div>
+							<div class="moneyOp clickToB"><p>$50</p></div>
+							<div class="moneyOp clickToB"><p>$70</p></div>
+							<div class="moneyOp clickToB"><p>$90</p></div>
+							<input type="text" name="selfAmount" placeholder="Enter an amount" id="selfAmount">
+						</div>
+						<div id="checkArea">
 						<input type="checkbox" name="auto-renew" value="auto-renew" id="autoRenew">
 						<label for="autoRenew" id="renewText"> Yes, automatically repeat this fund every month.</label>
+						</div>
 					</div>
 					<div class="billingInfo">
+						<h3 class="lightG" id="fundH3">Billing Information</h3>
 						<div class="billN">
 							<input type="text" name="first-name" required class="firstName" placeholder="First Name">
 							<input type="text" name="last-name" class="lastName" placeholder="Last Name" required>
@@ -196,8 +209,11 @@
 					</div>
 					<input type="submit" name="submit" value="SUBMIT" class="paySubmit">
 				</form>
-				<p id="fundNote">Please <a href="https://www.google.com/gmail/">email us</a> if you'd like to take an active role in raising the funds needed for these and other important TRAA activities.</p>
+				<div id="fundNote">
+					<p>Please <a href="https://www.google.com/gmail/">email us</a> if you'd like to take an active role in raising the funds needed for these and other important TRAA activities.</p>
 				</div>
+				</div>
+				<div id="fundOverlay"></div>
 			</section>
 		</section>
 		<section class="sections">
@@ -216,7 +232,7 @@
 				<p>There are three different hat colours available: Clay Grey, Burnt Orange and Taupe. If you thought the tee's were a good deal, all three editions of these hats are also priced at $15 each.</p>
 				<p>We now have some nice stickers featuring the TRAA logo that you can display on your vehicle, boat, lunchbox or wherever you like. These are $2 each but you get one for joining the TRAA as a member or renewing an existing TRAA membership.</p>
 				<p>Get your TRAA Gear (makes a great Christmas gift!) at any TRAA event, such as this coming General Meeting.</p>
-				<a href="#" id="merchBut">MORE PRODUCTS</a>
+				<a href="javascript:void(0)" id="merchBut">SHOP</a>
 			</div>
 			<div id="latestBotI"></div>
 			<div id="productPage">
@@ -227,33 +243,35 @@
 			<h2 class="hidden">New Events</h2>
 			<div id="newEvents">
 				<p class="darkG">The New Events</p>
-				<p class="light">Rod Building - Your First Time</p>
+				<p class="lightG">Rod Building - Your First Time</p>
 				<p class="blueT">7:00PM - Mondays, February 18 through March 11, 2019</p>
 			</div>
 			<div id="gallery">
 				<div id="halfGrey"></div>
-				<div id="toLeft"></div>
+				<div id="toLeft"><a href="javascript:void(0)"><img src="images/left_arrow.svg" alt="arrow to left"></a></div>
+				<div id="bannerBox">
 					<div id="banner">
-						<div class="events">
-						<img src="images/fly_rod_icon.svg" alt="fly rod icon"><p>This will be a series of informal, hands-on sessions that will result in a spinning or fly rod that you have assembled and finished yourself.</p>
-					</div>
-					<div class="events">
-						<img src="images/member_icon_2.svg" alt="member card icon"><p>This opportunity is open only to current members of the TRAA, WOFGPA and/or FCFFC.</p>
-					</div>
-					<div class="events">
-						<img src="images/registration_icon.svg" alt="paper and pen icon"><p>Registration will be closed when 15 paid-up participants have registered, or January 11, 2019, whichever comes first.</p>
-					</div>
-					<div class="events">
-						<img src="images/email_icon.svg" alt="envelope icon"><p>An email with further details has been sent out. If you haven't received this email by Wednesday, December 19th, please Contact Us.</p>
-					</div>
-					<div class="events">
-						<img src="images/present_icon.svg" alt="crowd icon"><p>Presented by: Thames River Anglers Association with the Western Ontario Fish & Game Protective Ass’n and the Forest City Fly Fishing</p>
-					</div>
-					<div class="events">
-						<img src="images/pin_icon.svg" alt="pin icon"><p>The Western Ontario Fish & Game Protective Association clubhouse is at 790 Southdale Road, London Ontario.</p>
-					</div>
+						<div class="events" data-offset="0">
+							<img src="images/fly_rod_icon.svg" alt="fly rod icon"><p>This will be a series of informal, hands-on sessions that will result in a spinning or fly rod that you have assembled and finished yourself.</p>
+						</div>
+						<div class="events" data-offset="1">
+							<img src="images/member_icon.svg" alt="member card icon"><p>This opportunity is open only to current members of the TRAA, WOFGPA and/or FCFFC.</p>
+						</div>
+						<div class="events" data-offset="2">
+							<img src="images/registration_icon.svg" alt="paper and pen icon"><p>Registration will be closed when 15 paid-up participants have registered, or January 11, 2019, whichever comes first.</p>
+						</div>
+						<div class="events" data-offset="3">
+							<img src="images/email_icon.svg" alt="envelope icon"><p>An email with further details has been sent out. If you haven't received this email by Wednesday, December 19th, please Contact Us.</p>
+						</div>
+						<div class="events" data-offset="4">
+							<img src="images/present_icon.svg" alt="crowd icon"><p>Presented by: Thames River Anglers Association with the Western Ontario Fish & Game Protective Ass’n and the Forest City Fly Fishing</p>
+						</div>
+						<div class="events" data-offset="5">
+							<img src="images/pin_icon.svg" alt="pin icon"><p>The Western Ontario Fish & Game Protective Association clubhouse is at 790 Southdale Road, London Ontario.</p>
+						</div>
 				</div>
-				<div id="toRight"></div>
+				</div>
+				<div id="toRight"><a href="javascript:void(0)"><img src="images/right_arrow.svg" alt="arrow to right"></a></div>
 			</div>
 		</section>
 

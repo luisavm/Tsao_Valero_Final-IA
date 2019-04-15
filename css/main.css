@@ -9,6 +9,12 @@
 .sections
 {
   border-top: 1px solid #000;
+  position: relative;
+}
+
+.sections:nth-of-type(3)
+{
+  background: #f5f5f5;
 }
 
 h1, h2
@@ -308,6 +314,7 @@ html {
 {
   display: flex;
   flex-direction: column;
+  z-index: 89;
 }
 
 #mainNav button
@@ -444,6 +451,7 @@ html {
   justify-content: center;
   background-color: #fff;
   width: 100%;
+  z-index: 99;
 }
 
 #leaveMem
@@ -587,10 +595,23 @@ html {
   margin-right: auto;
 }
 
-.creditcardN, .month, .year, .ccv, .paySubmit
+.creditcardN, .month, .year, .ccv
 {
   -webkit-appearance: none;
   border: solid 1px #cfcdd2;
+  width: 203px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paySubmit
+{
+  -webkit-appearance: none;
+  border-style: none;
   width: 203px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -892,11 +913,6 @@ html {
 .YT
 {
   width: 20px;
-}
-
-.sections
-{
-  height: 600px;
 }
 
 /***********************************************************/
@@ -1605,5 +1621,1069 @@ html {
     width: 187px;
     margin-bottom: 86px; 
     height: 54px;
+  }
+}
+
+/**************************************************Home Page*/
+
+#homeHero
+{
+  background: url(../images/beautiful_river_1.jpg) no-repeat;
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+}
+
+#heroHead
+{
+  font-family: "Merriweather",'New Times Roman', serif;
+  width: 216px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homeHero h3
+{
+  color: #fff;
+  font-size: 17px;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+#greenQuote
+{
+  margin-top: 52px;
+  width: 100%;
+  background-color: #9abd4b;
+  padding-top: 53px;
+  padding-bottom: 87px;
+}
+
+#quoteBehind
+{
+  width: 288px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quoteRow
+{
+  width: 260px;
+  height: 69px;
+  margin-top: 5px;
+  margin-left: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#startQ
+{
+  background: url(../images/open_quote_1.png) no-repeat;
+  width: 54px;
+  height: 35px;
+}
+
+#endQ
+{
+  background: url(../images/close_quote_1.png) no-repeat;
+  width: 54px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+#quoteBehind p
+{
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 20px;
+  /*width: 288px;*/
+  color: #fff;
+}
+
+#fundraising
+{
+  position: absolute;
+  margin-top: -40px;
+  background-color: #fff;
+  width: 210px;
+  z-index: 2;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  padding: 36px 28px 39px 25px;
+  margin-left: 25px;
+}
+
+#fundraising h2
+{
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#fundH2
+{
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+#fundraising p
+{
+  line-height: 20px;
+}
+
+#fundraising p a
+{
+  color: #5d7132;
+}
+
+#fundraising h2, #fundraising p
+{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#fundBut
+{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 16px;
+  width: 111px;
+  height: 24px;
+  background: #1f75aa;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #fff;
+  word-spacing: 4px;
+}
+
+#fundBut:hover, #merchBut:hover
+{
+  background: #2b96d8;
+}
+
+#fundBot
+{
+  height: 380px;
+  background: url(../images/a_man_holds_fish_1.jpg) no-repeat;
+}
+
+#fundPage
+{
+  display: none;
+}
+
+.showFund
+{
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: -123px;
+  z-index: 99;
+}
+
+#fundOverlay
+{
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#exitFund
+{
+  position: absolute;
+  right: 0;
+  margin-right: 14px;
+  margin-top: 17px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  z-index: 3;
+}
+
+#videoFund
+{
+  width: 100%;
+}
+
+#fundVideo
+{
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  background: url(../images/cloud_tree_river_1.jpg) no-repeat;
+}
+
+#fundForm
+{
+  margin-top: 200px;
+}
+
+#amountOps
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-right: 35px;
+  flex-wrap: wrap;
+}
+
+.moneyOp
+{
+  padding: 14px 18px 13px 20px;
+  border: 1px solid #8c8b8b;
+  margin-right: 14px;
+  margin-bottom: 28px;
+}
+
+.moneyOp:hover, #selfAmount:hover
+{
+  border: 1px solid #2b96d8;
+}
+
+.moneyOp p
+{
+  width: 23px;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#selfAmount
+{
+  width: 100px;
+  padding: 12px 15px 12px 18px;
+  font-size: 12px;
+  border: 1px solid #8c8b8b;
+  margin-bottom: 28px;
+}
+
+/*#renewText
+{
+  background-position: 0 0px;
+  cursor: pointer;
+  z-index: 30;
+  padding-left: 20px;
+  background-image:url(http://csscheckbox.com/checkboxes/lite-green-check.png) no-repeat;
+}
+
+#autoRenew:checked + #renewText
+{
+  background-position: 0 -15px;
+}
+
+#autoRenew
+{
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+  clip: rect(0 0 0 0);
+}*/
+
+/*#customCheck
+{
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 2px;
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border: 1px solid #8c8b8b;
+  border-radius: 2px;
+}*/
+
+#checkArea
+{
+  margin-left: 40px;
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 51px;
+}
+
+#renewText
+{
+
+  color: #8c8b8b;
+  line-height: 15px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#fundH3
+{
+  margin-bottom: 32px;
+}
+
+#fundNote
+{
+  margin: 28px 51px 40px 51px;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+#fundNote p, #latestTopT p, #latestBotT p
+{
+  text-align: left;
+}
+
+#latestTopT
+{
+  position: relative;
+  background: #fff;
+  padding: 26px 28px 44px 25px; 
+  width: 216px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 49px;
+  z-index: 2;
+}
+
+#latestTopT p
+{
+  margin-bottom: 16px;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+
+#latestTopI
+{
+  position: absolute;
+  width: 100%;
+  height: 502px;
+  z-index: 1;
+  margin-top: -245px;
+  background: url(../images/trown_eggs_1.jpg) no-repeat;
+}
+
+#latestBotT
+{
+  position: relative;
+  background: #fff;
+  padding: 26px 28px 44px 25px; 
+  width: 216px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 49px;
+  z-index: 2;
+  margin-bottom: 46px;
+}
+
+#latestBotT p
+{
+  margin-bottom: 16px;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+
+#merchBut
+{
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 26px;
+  width: 130px;
+  height: 24px;
+  background: #1f75aa;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #fff;
+  word-spacing: 4px;
+}
+
+#newEvents
+{
+  margin-top: 82px;
+  margin-bottom: 53px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#newEvents p
+{
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+#banner
+{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+#bannerBox
+{
+  width: 215px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 65px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+}
+
+.events
+{
+  background: #fff;
+  width: 185px;
+  height: 200px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 22px 26px 23px;
+  margin-right: 30px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+}
+
+#halfGrey
+{
+  background: #f5f5f5;
+  width: 100%;
+  height: 251px;
+  position: absolute;
+  z-index: -1;
+  margin-top: 105px;
+}
+
+.events img
+{
+  width: 76px;
+  height: 70px;
+  margin-bottom: 22px;
+}
+
+.events p
+{
+  line-height: 20px;
+  font-size: 12px;
+  text-align: left;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+#toLeft
+{
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  left: 12px;
+  top: 350px;
+  background: #fff;
+}
+
+#toLeft img, #toRight img
+{
+  width: 8px;
+  margin-left: 9px;
+  margin-top: 6px;
+}
+
+#toRight
+{
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  right: 12px;
+  top: 350px;
+  background: #fff;
+}
+
+@media screen and (min-width: 321px) {
+  #homeHero
+  {
+    background: url(../images/beautiful_river_2.jpg) no-repeat;
+  }
+
+  #fundBot
+  {
+    background: url(../images/a_man_holds_fish_2.jpg) no-repeat;
+  }
+
+  #latestTopI
+  {
+    background: url(../images/trown_eggs_2.jpg) no-repeat;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  #fundForm
+  {
+    margin-top: 250px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #homeHero
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #greenQuote
+  {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #fundraising
+  {
+    margin-top: -10px;
+  }
+
+  #fundBot
+  {
+    position: relative;
+    margin-left: auto;
+    width: 446px;
+    height: 415px;
+    /*margin-top: -20px;*/
+    margin-bottom: 40px;
+  }
+
+  #latestTopI
+  {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 441px;
+    height: 413px;
+  }
+
+  #latestBotT
+  {
+    margin-top: -70px;
+  }
+
+  #latestBotI
+  {
+    background: url(../images/traa_gear_2.jpg) no-repeat;
+    width: 441px;
+    height: 413px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -380px;
+    margin-bottom: 30px;
+  }
+
+  #fundForm
+  {
+    margin-top: 300px;
+  }
+
+  #amountOps
+  {
+    margin-left: 80px;
+  }
+
+  #checkArea
+  {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  #fundBot
+  {
+    right: 20px;
+  }
+
+  #fundForm
+  {
+    margin-top: 350px;
+  }
+
+  .showFund
+  {
+    top: -168px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #fundBot
+  {
+    right: 40px;
+  }
+
+  #fundraising
+  {
+    margin-left: 40px;
+  }
+
+  #latestTopT
+  {
+    margin-right: 50px;
+  }
+
+  #latestBotT
+  {
+    margin-left: 50px;
+  }
+
+  #latestTopI
+  {
+    margin-top: -400px;
+  }
+
+  #latestBotI
+  {
+    margin-top: -450px;
+    margin-bottom: 50px;
+  }
+
+  #fundForm
+  {
+    margin-top: 400px;
+  }
+
+  #amountOps
+  {
+    margin-left: 100px;
+  }
+
+  #checkArea
+  {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #latestTopI
+  {
+    margin-left: 80px;
+  }
+
+  #latestBotI
+  {
+    margin-right: 50px;
+  }
+
+  #fundForm
+  {
+    margin-top: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #homeHero
+  {
+    padding-top: 57px;
+    padding-bottom: 153px;
+  }
+
+  #heroHead
+  {
+    font-size: 45px;
+    width: 328px;
+    line-height: 50px;
+  }
+
+  #homeHero h3
+  {
+    font-size: 25px;
+  }
+
+  #greenQuote
+  {
+    margin-top: 32px;
+  }
+
+  #quoteBehind
+  {
+    width: 423px;
+  }
+
+  #fundraising
+  {
+    margin-top: -109px;
+    width: 302px;
+    padding: 41px 47px 32px 23px;
+    margin-left: 80px;
+  }
+
+  #fundBut
+  {
+    width: 127px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 9px;
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  #fundBot
+  {
+    margin-right: 60px;
+    margin-top: -55px;
+    margin-bottom: 90px;
+  }
+
+  #latestTopT
+  {
+    width: 317px;
+    padding: 34px 36px 20px 23px;
+    margin-right: 79px;
+  }
+
+  #latestTopI
+  {
+    margin-left: 80px;
+    margin-top: -280px;
+    /*z-index: -1;*/
+  }
+
+  #latestBotT
+  {
+    margin-left: 50px;
+    width: 300px;
+    padding: 29px 35px 28px 41px;
+  }
+
+  #merchBut
+  {
+    margin-left: 85px;
+    margin-top: 10px;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  #latestBotI
+  {
+    margin-right: 50px;
+    margin-top: -500px;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+
+  #bannerBox
+  {
+    width: 490px;
+  }
+
+  #toLeft
+  {
+    margin-left: 83px;
+  }
+
+  #toRight
+  {
+    right: 83px;
+  }
+
+  #halfGrey
+  {
+    height: 250px;
+    margin-top: 120px;
+  }
+
+  #fundForm
+  {
+    margin-top: 500px;
+  }
+
+  #amountOps
+  {
+    margin-left: 125px;
+  }
+
+  .moneyOp
+  {
+    margin-right: 40px;
+  }
+
+  #checkArea
+  {
+    margin-left: 150px;
+  }
+
+  #fundNote
+  {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #homeHero
+  {
+    background: url(../images/beautiful_river_3.jpg) no-repeat;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #homeHero
+  {
+    padding-top: 73px;
+    padding-bottom: 160px;
+  }
+
+  #heroHead
+  {
+    width: 400px;
+    width: 400px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  #homeHero h3
+  {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  #greenQuote
+  {
+    margin-top: 31px;
+  }
+
+  #quoteBehind
+  {
+    width: 442px;
+  }
+
+  #quoteBehind p
+  {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #quoteRow
+  {
+    width: 160px;
+    margin-top: -20px;
+    margin-left: 0px;
+  }
+
+  #startQ
+  {
+    background: url(../images/open_quote_3.png) no-repeat;
+    width: 73px;
+    height: 55px;
+  }
+
+  #endQ
+  {
+    background: url(../images/close_quote_3.png) no-repeat;
+    width: 73px;
+    height: 55px;
+    margin-top: 40px;
+  }
+
+  #fundBot
+  {
+    width: 560px;
+    height: 524px;
+    background: url(../images/a_man_holds_fish_3.jpg) no-repeat;
+  }
+
+  #latestTopI
+  {
+    width: 560px;
+    height: 524px;
+    background: url(../images/trout_eggs_3_.jpg) no-repeat;
+  }
+
+  #latestBotI
+  {
+    width: 560px;
+    height: 524px;
+    background: url(../images/traa_gear_3.jpg) no-repeat;
+  }
+
+  #fundForm
+  {
+    margin-top: 550px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  #amountOps
+  {
+    margin-left: 170px;
+  }
+
+  #checkArea
+  {
+    margin-left: 170px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #latestTopT
+  {
+    margin-right: 100px;
+  }
+
+  #latestBotT
+  {
+    margin-left: 100px;
+  }
+
+  .showFund
+  {
+    width: 970px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 4px 0px #cfcdd2;
+  }
+
+  #amountOps
+  {
+    margin-left: 210px;
+  }
+
+  .moneyOp
+  {
+    margin-right: 45px;
+  }
+
+  #checkArea
+  {
+    margin-left: 210px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #fundraising
+  {
+    width: 383px;
+    padding: 52px 44px 81px 29px;
+    margin-left: 212px;
+    margin-top: -100px;
+  }
+
+  #fundBut
+  {
+    margin-left: 120px;
+    font-size: 15px;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+
+  .lightG
+  {
+    line-height: 45px !important;
+  }
+
+  #fundH2
+  {
+    line-height: 35px !important;
+  }
+
+  #fundBot
+  {
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+  }
+
+  #latestTopT
+  {
+    width: 385px;
+    padding: 44px 57px 44px 30px;
+    margin-right: 215px;
+    margin-top: 87px;
+  }
+
+  #latestBotT
+  {
+    width: 382px;
+    padding: 36px 40px 40px 32px;
+    margin-left: 182px;
+    margin-top: -185px;
+  }
+
+  #merchBut
+  {
+    margin-left: 140px;
+  }
+
+  #latestTopI
+  {
+    margin-left: 222px;
+  }
+
+  #latestBotI
+  {
+    margin-right: 182px;
+  }
+
+  #bannerBox
+  {
+    width: 750px;
+  }
+
+  #toLeft
+  {
+    width: 41px;
+    height: 41px;
+    left: 20px;
+    top: 350px;
+  }
+
+  #toLeft img, #toRight img
+  {
+    width: 11px;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+
+  #toRight
+  {
+    width: 41px;
+    height: 41px;
+    right: 90px;
+    top: 350px;
+  }
+
+  #halfGrey
+  {
+    height: 300px;
+  }
+
+  #bannerBox
+  {
+    margin-bottom: 120px;
+  }
+
+  .showFund
+  {
+    margin-left: 100px;
   }
 }
