@@ -31,12 +31,19 @@ h1, h2
   font-size: 20px;
 }
 
-h3, p
+p, ul, li
 {
 	text-align: center;
   font-size: 12px;
-  color: #4d4747;
+  color: #434345;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+h3
+{
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .lightG
@@ -2118,6 +2125,295 @@ html {
   background: #fff;
 }
 
+#aboutHero
+{
+  padding-top: 106px;
+  padding-bottom: 155px;
+  background: url(../images/hold_trout_fish_1.jpg) no-repeat;
+}
+
+#aboutL
+{
+  background: #fff;
+  width: 235px;
+  padding: 39px 17px 25px 15px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+}
+
+#aboutL p
+{
+  width: 145px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#aboutL ul li
+{
+  text-align: left;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#aboutR
+{
+  background: #fff;
+  width: 238px;
+  padding: 33px 13px 27px 17px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  margin-bottom: 85px;
+}
+
+#aboutR p
+{
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 16px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.ourteamRow
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 266px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+}
+
+.staff
+{
+  width: 120px;
+  height: 123px;
+  background-color: #9abd4b;
+  margin-bottom: 34px;
+  filter: drop-shadow(0 0 0.5rem lightgrey);
+}
+
+.staff:last-child
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staff p
+{
+  width: 90px;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+#traaVCC
+{
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: 60px;
+  line-height: 25px;
+}
+
+.volunteerRow
+{
+  display: flex;
+  flex-direction: row;
+  width: 266px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.chair
+{
+  width: 120px;
+  height: 123px;
+  background-color: #aac868;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 0 0.5rem lightgrey);
+}
+
+.chair:last-child
+{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.chair p
+{
+  width: 90px;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  line-height: 15px;
+}
+
+.staffHover, .chairHover
+{
+  font-size: 0;
+}
+
+.staff:hover .staffHover
+{
+  font-size: 12px;
+  color: #676565;
+}
+
+.staff:hover
+{
+  background-color: #fff;
+}
+
+.staff:hover p
+{
+  color: #9abd4b;
+  border-top: 2px solid #9abd4b;
+  border-bottom: 2px solid #9abd4b;
+}
+
+.chair:hover .chairHover
+{
+  font-size: 10px;
+  color: #676565;
+  display: block;
+}
+
+.chair:hover
+{
+  background-color: #fff;
+}
+
+.chair:hover p
+{
+  color: #9abd4b;
+  border-top: 2px solid #9abd4b;
+  border-bottom: 2px solid #9abd4b;
+}
+
+.ourT
+{
+  margin-top: 23px;
+}
+
+.busText
+{
+  margin-bottom: 15px;
+  width: 257px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 20px;
+}
+
+.busText:first-child
+{
+  margin-top: 49px;
+  letter-spacing: 1px;
+}
+
+.business
+{
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 205px;
+}
+
+.busImg
+{
+  width: 205px;
+  height: 111px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+}
+
+#angling
+{
+  background: url(../images/angling_logo_2.jpg) no-repeat;
+}
+
+#guillevin
+{
+  background: url(../images/guillevin_logo_2.jpg) no-repeat;
+}
+
+#muma
+{
+  background: url(../images/muma_logo_2.jpg) no-repeat;
+}
+
+#recycling
+{
+  background: url(../images/recycling_logo_2.jpg) no-repeat;
+}
+
+#melchers
+{
+  background: url(../images/melchers_logo_2.jpg) no-repeat;
+}
+
+.businessBut
+{
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 90px;
+}
+
+.businessBut img
+{
+  width: 11px;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+
+.businessBut img.upsideDown
+{
+  transform: rotate(180deg);
+  transition: ease all 0.4s;
+}
+
+.businessInfo
+{
+  display: none;
+}
+
+.businessInfo.opened
+{
+  display: block;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  width: 175px;
+  padding: 10px 15px 15px 15px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
 @media screen and (min-width: 321px) {
   #homeHero
   {
@@ -2132,6 +2428,13 @@ html {
   #latestTopI
   {
     background: url(../images/trown_eggs_2.jpg) no-repeat;
+  }
+
+  #aboutHero
+  {
+    padding-top: 126px;
+    padding-bottom: 185px;
+    background: url(../images/hold_trout_fish_2.jpg) no-repeat;
   }
 }
 
@@ -2275,6 +2578,78 @@ html {
   #checkArea
   {
     margin-left: 100px;
+  }
+
+  #aboutRow
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #aboutL
+  {
+    margin-bottom: 40px;
+    width: 306px;
+  }
+
+  #aboutR
+  {
+    width: 257px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+
+  .ourteamRow
+  {
+    width: 424px;
+  }
+
+  .volunteerRow
+  {
+    width: 424px;
+  }
+
+  .staff:nth-child(4)
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .staff:last-child
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chair:nth-child(4)
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chair:last-child
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .businessRow
+  {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .business
+  {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -2435,12 +2810,196 @@ html {
     margin-right: auto;
     margin-bottom: 60px;
   }
+
+  #aboutL
+  {
+    margin-bottom: 81px;
+    padding: 42px 21px 37px 20px;
+    width: 306px;
+  }
+
+  #aboutL p
+  {
+    width: 184px;
+    margin-bottom: 30px;
+  }
+
+  #aboutL ul li
+  {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  #aboutR
+  {
+    width: 257px;
+    margin-top: 80px;
+    margin-bottom: 270px;
+    padding: 42px 10px 23px 18px;
+  }
+
+  #aboutR p
+  {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .ourteamRow
+  {
+    margin-top: 68px;
+    width: 642px;
+  }
+
+  .volunteerRow
+  {
+    width: 642px;
+    margin-bottom: 80px;
+  }
+
+  .businessRow
+  {
+    width: 654px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .business
+  {
+    margin-bottom: 50px;
+  }
+
+  .businessInfo p
+  {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .staff
+  {
+    width: 180px;
+    height: 183px;
+    margin-bottom: 24px;
+  }
+
+  .staff p
+  {
+    width: 100px;
+    margin-left: 40px;
+    font-size: 15px;
+    margin-top: 50px;
+    line-height: 20px;
+  }
+
+  #ourTeamLine
+  {
+    width: 445px;
+    border-top: 1px solid lightgrey;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #traaVCC
+  {
+    font-size: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .chair
+  {
+    width: 180px;
+    height: 183px;
+    margin-bottom: 24px;
+  }
+
+  .chair p
+  {
+    width: 100px;
+    margin-left: 40px;
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+
+  .staff:hover .staffHover
+  {
+    font-size: 16px;
+  }
+
+  .chair:hover .chairHover
+  {
+    font-size: 15px;
+  }
+
+  .chair:first-child p
+  {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 115px;
+  }
+
+  .chair:nth-child(2) p
+  {
+    margin-top: 60px;
+  }
+
+  .chair:last-child p
+  {
+    margin-top: 55px;
+  }
+
+  .businessBut
+  {
+    width: 32px;
+    height: 32px;
+    margin-top: -10px;
+    margin-left: 90px;
+  }
+
+  .businessBut img
+  {
+    width: 14px;
+    margin-top: 12px;
+    margin-left: 9px;
+  }
+
+  .ourT
+  {
+    margin-top: 47px;
+  }
+
+  .busText
+  {
+    margin-bottom: 35px;
+    width: 509px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 20px;
+  }
+
+  .busText:first-child
+  {
+    margin-top: 69px;
+  }
+
 }
 
 @media screen and (min-width: 769px) {
   #homeHero
   {
     background: url(../images/beautiful_river_3.jpg) no-repeat;
+  }
+
+  #aboutHero
+  {
+    padding-top: 156px;
+    padding-bottom: 201px;
+    background: url(../images/hold_trout_fish_3.jpg) no-repeat;
   }
 }
 
@@ -2577,6 +3136,175 @@ html {
   {
     margin-left: 210px;
   }
+
+  #aboutL
+  {
+    margin-left: 100px;
+    width: 366px;
+    padding: 52px 33px 52px 24px;
+  }
+
+  #aboutR
+  {
+    margin-right: 100px;
+    width: 318px;
+    padding: 52px 24px 35px 29px;
+  }
+
+  #aboutR p
+  {
+    line-height: 25px;
+  }
+
+  #aboutL p
+  {
+    width: 261px;
+    margin-bottom: 30px;
+  }
+
+  #aboutL ul li
+  {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .ourteamRow
+  {
+    width: 790px;
+  }
+
+  .staff
+  {
+    width: 224px;
+    height: 229px;
+    margin-bottom: 64px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .staff p
+  {
+    width: 160px;
+    margin-left: 30px;
+    font-size: 18px;
+    margin-top: 79px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .volunteerRow
+  {
+    width: 790px;
+  }
+
+  .chair
+  {
+    width: 224px;
+    height: 229px;
+    margin-bottom: 64px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .chair p
+  {
+    width: 160px;
+    margin-left: 30px;
+    font-size: 18px;
+    margin-top: 69px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    line-height: 21px;
+  }
+
+  .staff:hover .staffHover
+  {
+    font-size: 16px;
+  }
+
+  .chair:hover .chairHover
+  {
+    font-size: 16px;
+  }
+
+  .chair:first-child p
+  {
+    margin-top: 70px;
+    margin-left: 25px;
+    width: 170px;
+  }
+
+  .chair:nth-child(2) p
+  {
+    margin-top: 80px;
+  }
+
+  .chair:last-child p
+  {
+    margin-top: 75px;
+  }
+
+  #angling
+  {
+    background: url(../images/angling_logo_3.jpg) no-repeat;
+  }
+
+  #guillevin
+  {
+    background: url(../images/guillevin_logo_3.jpg) no-repeat;
+  }
+
+  #muma
+  {
+    background: url(../images/muma_logo_3.jpg) no-repeat;
+  }
+
+  #recycling
+  {
+    background: url(../images/recycling_logo_3.jpg) no-repeat;
+  }
+
+  #melchers
+  {
+    background: url(../images/melchers_logo_3.jpg) no-repeat;
+  }
+
+  .businessRow
+  {
+    width: 900px;
+    margin-bottom: 120px;
+    margin-top: 80px;
+  }
+
+  .businessBut
+  {
+    margin-left: 120px;
+  }
+
+  .busImg
+  {
+    width: 270px;
+    height: 157px;
+  }
+
+  .business
+  {
+    width: 270px;
+    margin-bottom: 60px;
+  }
+
+  .businessInfo.opened
+  {
+    width: 240px;
+  }
+
+  .businessInfo p
+  {
+    width: 210px;
+    padding: 20px 15px 20px 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2685,5 +3413,15 @@ html {
   .showFund
   {
     margin-left: 100px;
+  }
+
+  #aboutL
+  {
+    margin-left: 180px;
+  }
+
+  #aboutR
+  {
+    margin-right: 180px;
   }
 }

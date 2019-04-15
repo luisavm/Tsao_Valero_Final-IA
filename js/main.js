@@ -87,72 +87,100 @@
 	const fundBut = document.querySelector("#fundBut"),
 		fundPage = document.querySelector("#fundPage"),
 		exitFund = document.querySelector("#exitFund");
-	
-	function showFund() {
+
+	if (fundBut === null) {
+			console.log("it's not home page");
+		} else {
+			function showFund() {
 		console.log("show fundraising page");
 		fundPage.classList.add("showFund");
-	}
-
-	function fundVB() {
-		console.log("new video.");
-		let fundVideo = document.querySelector("#videoS");
-		if (window.matchMedia("(min-width: 650px)").matches) {
-			fundVideo.src = "../video/fund_video_desktop.mp4";
 		}
-	}
 
-	function fundVS() {
-		console.log("new video.");
-		let fundVideo = document.querySelector("#videoS");
-		if (window.matchMedia("(min-width: 450px)").matches) {
-			fundVideo.src = "../video/fund_video_mobile.mp4";
+		function fundVB() {
+			console.log("new video.");
+			let fundVideo = document.querySelector("#videoS");
+			if (window.matchMedia("(min-width: 650px)").matches) {
+				fundVideo.src = "../video/fund_video_desktop.mp4";
+			}
 		}
+
+		function fundVS() {
+			console.log("new video.");
+			let fundVideo = document.querySelector("#videoS");
+			if (window.matchMedia("(min-width: 450px)").matches) {
+				fundVideo.src = "../video/fund_video_mobile.mp4";
+			}
+		}
+
+		window.addEventListener("resize", fundVS);
+		window.addEventListener("resize", fundVB);
+
+		function closeFund() {
+			console.log("close fundraising page");
+			fundPage.classList.remove("showFund");
+		}
+
+		fundBut.addEventListener("click", showFund);
+		exitFund.addEventListener("click", closeFund);
 	}
 	
-	window.addEventListener("resize", fundVS);
-	window.addEventListener("resize", fundVB);
-
-	function closeFund() {
-		console.log("close fundraising page");
-		fundPage.classList.remove("showFund");
-	}
-
-	fundBut.addEventListener("click", showFund);
-	exitFund.addEventListener("click", closeFund);
+	
 
 	const 	toLeft = document.querySelector("#toLeft"),
 			toRight = document.querySelector("#toRight"),
 			banners = document.querySelectorAll(".events");
 			
-
-	function moveRight() {
+	if (toLeft === null) {
+		console.log("there is no gallery")
+	} else {
+		function moveRight() {
 		let lastOne = document.querySelector(".events:last-child"),
 			whereLast = lastOne.getBoundingClientRect();
 		// console.log(whereLast.right);
 
-		if (whereLast.right > 512.5) {
-			TweenMax.to(banners, 0.8, {x: "-=260"});
-			console.log("next thing.");
-		} else {
-			TweenMax.killTweensOf(banners);
+			if (whereLast.right > 512.5) {
+				TweenMax.to(banners, 0.8, {x: "-=260"});
+				console.log("next thing.");
+			} else {
+				TweenMax.killTweensOf(banners);
+			}
+		}
+
+		function moveLeft() {
+			let	firstOne = document.querySelector(".events:first-child"),
+				whereFirst = firstOne.getBoundingClientRect();
+			// console.log(whereFirst.left);
+
+			if (whereFirst.left < 53.5) {
+				TweenMax.to(banners, 0.8, {x: "+=260"});
+				console.log("back to last one.");
+			} else {
+				TweenMax.killTweensOf(banners);
+			}
+		}
+
+		toLeft.addEventListener("click", moveLeft);
+		toRight.addEventListener("click", moveRight);
+	}
+
+	const 	openBus = document.querySelectorAll(".businessBut"),
+			busInfo = document.querySelectorAll(".businessInfo");
+
+	if (openBus === null) {
+		console.log("there is no need for openClose here");
+	} else {
+		function openClose(e) {
+		console.log("openClose called");
+		e.currentTarget.firstElementChild.classList.toggle('upsideDown');
+		e.currentTarget.nextElementSibling.classList.toggle('opened');
+		}
+
+		for(var i=0; i < openBus.length; i++) {
+			openBus[i].addEventListener("click", openClose);
 		}
 	}
 
-	function moveLeft() {
-		let	firstOne = document.querySelector(".events:first-child"),
-			whereFirst = firstOne.getBoundingClientRect();
-		// console.log(whereFirst.left);
 
-		if (whereFirst.left < 53.5) {
-			TweenMax.to(banners, 0.8, {x: "+=260"});
-			console.log("back to last one.");
-		} else {
-			TweenMax.killTweensOf(banners);
-		}
-	}
-
-	toLeft.addEventListener("click", moveLeft);
-	toRight.addEventListener("click", moveRight);
 
 	const toTop = document.querySelector("#topButton"),
 		top = document.querySelector("#mainHeader");
