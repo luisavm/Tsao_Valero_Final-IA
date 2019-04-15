@@ -2,22 +2,6 @@
 
 	console.log("Linked up"); 
 
- 	let anchorLink = document.querySelector("#topButton"),
-		top = document.getElementById("mainHeader");
-
-	anchorLink.addEventListener("load", function() {
-		console.log("ready to go to the top");
-		anchorLink.style.display = "block";
-	});
-
-	anchorLink.addEventListener("click", function(e) {
-    	if (window.scrollTo) {
-        e.preventDefault();
-        console.log("to the TOP!");
-        window.scrollTo({"behavior": "smooth", "top": top.offsetTop});
-    	}
-	});
-
 
 	const 	logoAni = document.querySelector("#logoAni");
 
@@ -35,7 +19,7 @@
 		}, 4000);
 
 
-	let button = document.querySelector("#navButton"),
+	const button = document.querySelector("#navButton"),
 		burgerCon = document.querySelector("#burgerCon"),
 		leaveMenu = document.querySelector("#leaveMenu"),
 		burgerOverlay = document.querySelector("#bgOverlay");
@@ -71,7 +55,7 @@
 
 	window.addEventListener("resize", closeMenu);
 
-	let membershipBut = document.querySelectorAll(".membershipBut"),
+	const membershipBut = document.querySelectorAll(".membershipBut"),
 		membershipPage = document.querySelector("#membership"),
 		leaveMemB = document.querySelector("#leaveMem");
 
@@ -82,15 +66,15 @@
 		membershipPage.classList.add("showMem");
 		burgerCon.classList.remove('slideToggle');
 		button.classList.remove('expanded');
-
-
 	}
+
 	const	clickTo = document.querySelectorAll(".clickToB");
 
-		clickTo.forEach(clickT => clickT.addEventListener("click", function(e) {
+		clickTo.forEach(clickT => clickT.addEventListener("click", function(b) {
 		console.log("payment method selected");
-		e.currentTarget.classList.toggle("clickedBut");
+		b.currentTarget.classList.toggle("clickedBut");
 	}));
+
 
 	function leaveMem() {
 		console.log("close membership page");
@@ -100,9 +84,93 @@
 	leaveMemB.addEventListener("click", leaveMem);
 	membershipBut.forEach(membershipButton => membershipButton.addEventListener("click", showMem));
 
+	const fundBut = document.querySelector("#fundBut"),
+		fundPage = document.querySelector("#fundPage"),
+		exitFund = document.querySelector("#exitFund");
+	
+	function showFund() {
+		console.log("show fundraising page");
+		fundPage.classList.add("showFund");
+	}
 
+	function fundVB() {
+		console.log("new video.");
+		let fundVideo = document.querySelector("#videoS");
+		if (window.matchMedia("(min-width: 650px)").matches) {
+			fundVideo.src = "../video/fund_video_desktop.mp4";
+		}
+	}
+
+	function fundVS() {
+		console.log("new video.");
+		let fundVideo = document.querySelector("#videoS");
+		if (window.matchMedia("(min-width: 450px)").matches) {
+			fundVideo.src = "../video/fund_video_mobile.mp4";
+		}
+	}
 	
-	
+	window.addEventListener("resize", fundVS);
+	window.addEventListener("resize", fundVB);
+
+	function closeFund() {
+		console.log("close fundraising page");
+		fundPage.classList.remove("showFund");
+	}
+
+	fundBut.addEventListener("click", showFund);
+	exitFund.addEventListener("click", closeFund);
+
+	const 	toLeft = document.querySelector("#toLeft"),
+			toRight = document.querySelector("#toRight"),
+			banners = document.querySelectorAll(".events");
+			
+
+	function moveRight() {
+		let lastOne = document.querySelector(".events:last-child"),
+			whereLast = lastOne.getBoundingClientRect();
+		// console.log(whereLast.right);
+
+		if (whereLast.right > 512.5) {
+			TweenMax.to(banners, 0.8, {x: "-=260"});
+			console.log("next thing.");
+		} else {
+			TweenMax.killTweensOf(banners);
+		}
+	}
+
+	function moveLeft() {
+		let	firstOne = document.querySelector(".events:first-child"),
+			whereFirst = firstOne.getBoundingClientRect();
+		// console.log(whereFirst.left);
+
+		if (whereFirst.left < 53.5) {
+			TweenMax.to(banners, 0.8, {x: "+=260"});
+			console.log("back to last one.");
+		} else {
+			TweenMax.killTweensOf(banners);
+		}
+	}
+
+	toLeft.addEventListener("click", moveLeft);
+	toRight.addEventListener("click", moveRight);
+
+	const toTop = document.querySelector("#topButton"),
+		top = document.querySelector("#mainHeader");
+
+	toTop.addEventListener("load", function() {
+		console.log("ready to go to the top");
+		toTop.style.display = "block";
+	});
+
+	function totheTop(e) {
+		e.preventDefault();
+		console.log("to the TOP!");
+		
+        window.scrollTo({"behavior": "smooth", "top": top.offsetTop});
+
+    }
+
+	toTop.addEventListener("click", totheTop);
 
 })();
 
