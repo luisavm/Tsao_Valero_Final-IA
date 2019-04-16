@@ -180,6 +180,27 @@
 		}
 	}
 
+	const 	productPage = document.querySelector("#productPage"),
+			productBut = document.querySelector("#merchBut"),
+			closeProductBut = document.querySelector("#closeProduct");
+
+	if (productPage === null) {
+		console.log("there is no shopping here");
+	} else {
+		function openProduct() {
+			productPage.classList.add("openProduct");
+			console.log("product page opened");
+		}
+
+		function closeProduct() {
+			productPage.classList.remove("openProduct");
+			console.log("product page closed");
+		}
+
+		productBut.addEventListener("click", openProduct);
+		closeProductBut.addEventListener("click", closeProduct);
+	}
+
 
 
 	const toTop = document.querySelector("#topButton"),

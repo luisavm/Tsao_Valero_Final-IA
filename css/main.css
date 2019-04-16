@@ -435,6 +435,21 @@ html {
   height: 100%;
 }
 
+#productOverlay
+{
+  position: fixed;
+  display: block;
+  top: 623px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255);
+  opacity: 0.7;
+  width: 100%;
+  height: 2683px;
+  z-index: 93;
+}
+
 /************************************************************/
 
 #mainHeader
@@ -1690,25 +1705,118 @@ html {
 
 /**************************************************contents*/
 
-/*#productPage
+#productPage
 {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  background: #fff;
-  top: -549px;
-  z-index: 99;
-  overflow: scroll;
+  display: none;
 }
 
-#productPage div
+#productHero
 {
-  width: 216px;
-  height: 240px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
+  background: url(../images/three_t_shirts_1.jpg) no-repeat;
+  padding-top: 81px;
+  padding-bottom: 30px;
+}
+
+#closeProduct
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #434345;
+}
+
+#productHero a
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #434345;
+}
+
+.openProduct
+{
+  display: block !important;
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#goTop
+{
+  z-index: 99;
+}
+
+.PandD
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopHs
+{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #5d7132;
+  font-family: "Merriweather",'New Times Roman', serif;
+}
+
+.itemsD p
+{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #434345;
+}
+
+.price
+{
+  font-size: 12px !important;
+  color: lightgrey;
+}
+
+.itemsD
+{
+  margin-bottom: 10px;
+}
+
+.products
+{
+  width: 212px;
+  height: 234px;
+  margin-bottom: 10px;
+}
+
+.products {
+  position: relative;
+  display: inline-block;
+  background: cyan;
+  display: inline-block;
+}
+
+.products > img {
+  vertical-align: middle;
+}
+
+.products::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2b96d8;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.products:hover::before {
+  opacity: 0.23;
+}
 
 #homeHero
 {
@@ -1718,7 +1826,7 @@ html {
   flex-direction: column;
 }
 
-#heroHead
+#heroHead, #shopHead
 {
   font-family: "Merriweather",'New Times Roman', serif;
   width: 216px;
@@ -3408,9 +3516,21 @@ textarea
 /*****************************************************MEDIAQ*/
 
 @media screen and (min-width: 321px) {
+  #productHero
+  {
+    background: url(../images/three_t_shirts_2.jpg) no-repeat;
+  }
+
   #homeHero
   {
     background: url(../images/beautiful_river_2.jpg) no-repeat;
+  }
+
+  #productHero
+  {
+    background: url(../images/three_t_shirts_2.jpg) no-repeat;
+    padding-top: 81px;
+    padding-bottom: 40px;
   }
 
   #projectHero
@@ -3726,10 +3846,30 @@ textarea
   {
     top: -168px;
   }
+
+  .products img
+  {
+    width: 230px;
+  }
+
+  .products
+  {
+    width: 230px;
+    height: 254px;
+  }
 }
 
 @media screen and (min-width: 650px) {
- 
+  #sti, #hat, #shi
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+  }
 
   #fundBot, #projectBot, #newslBot, #linksTopI, #contactBot
   {
@@ -3810,7 +3950,7 @@ textarea
   #latestBotI
   {
     margin-top: -550px;
-    margin-bottom: 50px;
+    margin-bottom: 140px;
   }
 
   #linksBotI
@@ -4235,7 +4375,7 @@ textarea
     width: 500px !important;
   }
 
-  #heroHead
+  #heroHead, #shopHead
   {
     font-size: 45px;
     width: 328px;
@@ -4717,6 +4857,18 @@ textarea
     background: url(../images/beautiful_river_3.jpg) no-repeat;
   }
 
+  #productHero
+  {
+    background: url(../images/three_t_shirts_3.jpg) no-repeat;
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  #productHero
+  {
+    background: url(../images/three_t_shirts_3.jpg) no-repeat;
+  }
+
   #projectHero
   {
     background: url(../images/blue_river_3.jpg) no-repeat;
@@ -4757,6 +4909,19 @@ textarea
 }
 
 @media screen and (min-width: 900px) {
+  #sti, #hat, #shi
+  {
+    width: 800px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #productPage
+  {
+    width: 900px;
+    margin-left: 50px;
+  }
+
   #homeHero
   {
     padding-top: 73px;
@@ -4769,7 +4934,7 @@ textarea
     padding-bottom: 170px;
   }
 
-  #heroHead
+  #heroHead, #shopHead
   {
     width: 400px;
     width: 400px;
@@ -4964,6 +5129,8 @@ textarea
 }
 
 @media screen and (min-width: 950px) {
+  
+
   #linksNote
   {
     margin-left: 180px;
@@ -5045,6 +5212,11 @@ textarea
 }
 
 @media screen and (min-width: 1000px) {
+  #productPage
+  {
+    margin-left: 100px;
+  }
+
   #latestTopT
   {
     margin-right: 100px;
@@ -5282,6 +5454,11 @@ textarea
 }
 
 @media screen and (min-width: 1100px) {
+  #productPage
+  {
+    margin-left: 150px;
+  }
+
    #linksNote
   {
     margin-left: 210px;
