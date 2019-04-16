@@ -1076,6 +1076,7 @@ html {
     bottom: 34px;
     width: 30px;
   }
+
 }
 
 @media screen and (min-width: 970px) {
@@ -1264,6 +1265,7 @@ html {
     font-size: 15px;
     margin-top: 20px;
   }
+
 }
 
 @media screen and (min-width: 360px) {
@@ -1631,7 +1633,7 @@ html {
   }
 }
 
-/**************************************************Home Page*/
+/**************************************************contents*/
 
 #homeHero
 {
@@ -1685,6 +1687,17 @@ html {
   height: 69px;
   margin-top: 5px;
   margin-left: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#PquoteRow
+{
+  width: 200px;
+  height: 69px;
+  margin-left: 50px;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -1844,6 +1857,11 @@ html {
   margin-top: 200px;
 }
 
+#fundNote a
+{
+  color: #1f75aa;
+}
+
 #amountOps
 {
   display: flex;
@@ -1951,7 +1969,7 @@ html {
   letter-spacing: 1px;
 }
 
-#fundNote p, #latestTopT p, #latestBotT p
+#fundNote p, #latestTopT p, #latestBotT p, #capTopT p, #capBotT p
 {
   text-align: left;
 }
@@ -1969,7 +1987,40 @@ html {
   z-index: 2;
 }
 
-#latestTopT p
+#capTopT
+{
+  position: relative;
+  background: #fff;
+  padding: 26px 28px 44px 25px; 
+  width: 216px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 49px;
+  z-index: 2;
+}
+
+.CaPBB
+{
+  position: absolute;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background: #1f75aa;
+  width: 111px;
+  height: 24px;
+  padding-top: 10px;
+  font-size: 11px;
+  margin-top: 25px;
+  margin-left: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.CaPBB:hover
+{
+  background: #2b96d8;
+}
+
+#latestTopT p, #capTopT p
 {
   margin-bottom: 16px;
   line-height: 20px;
@@ -1986,7 +2037,17 @@ html {
   background: url(../images/trown_eggs_1.jpg) no-repeat;
 }
 
-#latestBotT
+#capTopI
+{
+  position: absolute;
+  width: 100%;
+  height: 502px;
+  z-index: 1;
+  margin-top: -275px;
+  background: url(../images/trout_fish_1.jpg) no-repeat;
+}
+
+#latestBotT, #capBotT
 {
   position: relative;
   background: #fff;
@@ -2000,7 +2061,7 @@ html {
   margin-bottom: 46px;
 }
 
-#latestBotT p
+#latestBotT p, #capBotT p
 {
   margin-bottom: 16px;
   line-height: 20px;
@@ -2414,10 +2475,180 @@ html {
   line-height: 15px;
 }
 
+#projectHero
+{
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/blue_river_1.jpg) no-repeat;
+}
+
+#projectBot
+{
+  height: 380px;
+  background: url(../images/water_clearing_1.jpg) no-repeat;
+}
+
+.proH1
+{
+  width: 279px !important;
+}
+
+#proQ
+{
+  width: 180px;
+}
+
+#CandP
+{
+  margin-top: 30px;
+  line-height: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+}
+
+.proHs
+{
+  margin-top: 50px;
+}
+
+#archivesRow
+{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  margin-top: 51px;
+  margin-bottom: 80px;
+}
+
+#wallH
+{
+  background: url(../images/big_trout_fish_1.jpg) no-repeat;
+}
+
+#streamR
+{
+  background: url(../images/forests_1.jpg) no-repeat;
+}
+
+.archivesItem
+{
+  width: 235px;
+  height: 240px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.archivesItem:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+  background-color: #2b96d8;
+  opacity: 0.5;
+}
+
+.archivesItem:hover:before{
+  display: block;
+}
+
+.archivesItem:hover
+{
+  background-color: #1f75aa;
+  opacity: 0.83;
+}
+
+.archivesItem:hover h3
+{
+  -webkit-animation: text-shadow-pop-bottom 0.6s;
+}
+
+@-webkit-keyframes text-shadow-pop-bottom {
+  0% {
+    /*text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    /*text-shadow: 0 1px #555555, 0 2px #555555, 0 3px #555555, 0 4px #555555, 0 5px #555555, 0 6px #555555, 0 7px #555555, 0 8px #555555;*/
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+.archivesItem:hover h3
+{
+  /*text-shadow: 0 1px #555555, 0 2px #555555, 0 3px #555555, 0 4px #555555, 0 5px #555555, 0 6px #555555, 0 7px #555555, 0 8px #555555;*/
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+}
+
+.archivesItem h3
+{
+  position: absolute;
+  color: #fff;
+  margin-top: 197px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  width: 140px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-left: 44px;
+  text-align: center;
+}
+
+#charts
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#charts div
+{
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+}
+
+#eggs
+{
+  background: url(../images/eggs_chart_1.png) no-repeat;
+  width: 270px;
+  height: 204px;
+}
+
+#membershipsChart
+{
+  background: url(../images/memberships_chart_1.png) no-repeat;
+  width: 283px;
+  height: 202px;
+}
+
+#electro
+{
+ background: url(../images/electro_fishing_chart_1.png) no-repeat;
+ width: 269px;
+  height: 204px;
+}
+
+/*****************************************************MEDIAQ*/
+
 @media screen and (min-width: 321px) {
   #homeHero
   {
     background: url(../images/beautiful_river_2.jpg) no-repeat;
+  }
+
+  #projectHero
+  {
+    background: url(../images/blue_river_2.jpg) no-repeat;
   }
 
   #fundBot
@@ -2425,9 +2656,19 @@ html {
     background: url(../images/a_man_holds_fish_2.jpg) no-repeat;
   }
 
+  #projectBot
+  {
+    background: url(../images/water_clearing_2.jpg) no-repeat;
+  }
+
   #latestTopI
   {
     background: url(../images/trown_eggs_2.jpg) no-repeat;
+  }
+
+  #capTopI
+  {
+    background: url(../images/trout_fish_2.jpg) no-repeat;
   }
 
   #aboutHero
@@ -2436,6 +2677,8 @@ html {
     padding-bottom: 185px;
     background: url(../images/hold_trout_fish_2.jpg) no-repeat;
   }
+
+  
 }
 
 @media screen and (min-width: 360px) {
@@ -2450,6 +2693,12 @@ html {
   {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  #projectHero
+  {
+    padding-top: 70px;
+    padding-bottom: 90px;
   }
 
   #greenQuote
@@ -2470,7 +2719,15 @@ html {
     margin-left: auto;
     width: 446px;
     height: 415px;
-    /*margin-top: -20px;*/
+    margin-bottom: 40px;
+  }
+
+  #projectBot
+  {
+    position: relative;
+    margin-left: auto;
+    width: 446px;
+    height: 415px;
     margin-bottom: 40px;
   }
 
@@ -2483,7 +2740,21 @@ html {
     height: 413px;
   }
 
+  #capTopI
+  {
+    width: 445px;
+    height: 409px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #latestBotT
+  {
+    margin-top: -70px;
+  }
+
+  #capBotT
   {
     margin-top: -70px;
   }
@@ -2497,6 +2768,18 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: -380px;
+    margin-bottom: 30px;
+  }
+
+  #capBotI
+  {
+    background: url(../images/trout_baby_2.jpg) no-repeat;
+    width: 441px;
+    height: 413px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -180px;
     margin-bottom: 30px;
   }
 
@@ -2522,6 +2805,11 @@ html {
     right: 20px;
   }
 
+  #projectBot
+  {
+    right: 20px;
+  }
+
   #fundForm
   {
     margin-top: 350px;
@@ -2534,7 +2822,7 @@ html {
 }
 
 @media screen and (min-width: 650px) {
-  #fundBot
+  #fundBot, #projectBot
   {
     right: 40px;
   }
@@ -2549,14 +2837,34 @@ html {
     margin-right: 50px;
   }
 
+  #capTopT
+  {
+    margin-left: 50px;
+  }
+
+  .para
+  {
+    font-size: 14px;
+  }
+
   #latestBotT
   {
     margin-left: 50px;
   }
 
+  #capBotT
+  {
+    margin-right: 50px;
+  }
+
   #latestTopI
   {
     margin-top: -400px;
+  }
+
+  #capTopI
+  {
+    margin-top: -300px;
   }
 
   #latestBotI
@@ -2565,6 +2873,12 @@ html {
     margin-bottom: 50px;
   }
 
+  #capBotI
+  {
+    margin-top: -200px;
+    margin-bottom: 50px;
+  }
+  
   #fundForm
   {
     margin-top: 400px;
@@ -2651,6 +2965,82 @@ html {
     margin-right: 0;
     margin-left: 0;
   }
+
+  #wallH
+  {
+    background: url(../images/big_trout_fish_2.jpg) no-repeat;
+  }
+
+  #streamR
+  {
+    background: url(../images/forests_2.jpg) no-repeat;
+  }
+
+  #archivesRow
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    margin-top: 51px;
+    margin-bottom: 80px;
+  }
+
+  .archivesItem
+  {
+    width: 260px;
+    height: 268px;
+    margin-bottom: 30px;
+  }
+
+  .archivesItem h3
+  {
+    margin-top: 200px;
+    font-size: 18px;
+    width: 200px;
+    margin-left: 34px;
+  }
+
+  #eggs
+  {
+    background: url(../images/eggs_chart_2.png) no-repeat;
+    width: 279px;
+    height: 209px;
+  }
+
+  #membershipsChart
+  {
+    background: url(../images/memberships_chart_2.png) no-repeat;
+    width: 282px;
+    height: 211px;
+  }
+
+  #electro
+  {
+   background: url(../images/electro_fishing_chart_2.png) no-repeat;
+   width: 283px;
+    height: 212px;
+  }
+
+  #charts
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 608px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #CandP
+  {
+    margin-top: 40px;
+    line-height: 35px;
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -2659,9 +3049,19 @@ html {
     margin-left: 80px;
   }
 
+  #capTopI
+  {
+    margin-right: 80px;
+  }
+
   #latestBotI
   {
     margin-right: 50px;
+  }
+
+  #capBotI
+  {
+    margin-left: 50px;
   }
 
   #fundForm
@@ -2675,6 +3075,17 @@ html {
   {
     padding-top: 57px;
     padding-bottom: 153px;
+  }
+
+  #projectHero
+  {
+    padding-top: 112px;
+    padding-bottom: 161px;
+  }
+
+  .proH1
+  {
+    width: 500px !important;
   }
 
   #heroHead
@@ -2692,6 +3103,13 @@ html {
   #greenQuote
   {
     margin-top: 32px;
+  }
+
+  #PquoteRow
+  {
+    width: 190px;
+    margin-top: -5px;
+    margin-left: 120px;
   }
 
   #quoteBehind
@@ -2717,7 +3135,7 @@ html {
     padding-top: 15px;
   }
 
-  #fundBot
+  #fundBot, #projectBot
   {
     margin-right: 60px;
     margin-top: -55px;
@@ -2731,6 +3149,23 @@ html {
     margin-right: 79px;
   }
 
+  #capTopT
+  {
+    width: 317px;
+    padding: 34px 36px 20px 23px;
+    margin-left: 79px;
+  }
+
+  .CaPBB
+  {
+    width: 130px;
+    height: 25px;
+    padding-top: 13px;
+    font-size: 14px;
+    margin-left: 85px;
+    margin-top: 5px;
+  }
+
   #latestTopI
   {
     margin-left: 80px;
@@ -2738,11 +3173,32 @@ html {
     /*z-index: -1;*/
   }
 
+  #capTopI
+  {
+    margin-right: 80px;
+    margin-top: -200px;
+  }
+
   #latestBotT
   {
     margin-left: 50px;
     width: 300px;
     padding: 29px 35px 28px 41px;
+  }
+
+  #capBotT
+  {
+    width: 300px;
+    padding: 29px 35px 28px 41px;
+    margin-right: 50px;
+    margin-top: -100px;
+  }
+
+  #CandP
+  {
+    margin-top: 60px;
+    line-height: 40px;
+    width: 400px;
   }
 
   #merchBut
@@ -2758,6 +3214,14 @@ html {
   {
     margin-right: 50px;
     margin-top: -500px;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+
+  #capBotI
+  {
+    margin-left: 50px;
+    margin-top: -200px;
     margin-bottom: 100px;
     z-index: 1;
   }
@@ -2995,12 +3459,20 @@ html {
     background: url(../images/beautiful_river_3.jpg) no-repeat;
   }
 
+  #projectHero
+  {
+    background: url(../images/blue_river_3.jpg) no-repeat;
+  }
+
   #aboutHero
   {
     padding-top: 156px;
     padding-bottom: 201px;
     background: url(../images/hold_trout_fish_3.jpg) no-repeat;
   }
+
+  
+
 }
 
 @media screen and (min-width: 900px) {
@@ -3008,6 +3480,12 @@ html {
   {
     padding-top: 73px;
     padding-bottom: 160px;
+  }
+
+  #projectHero
+  {
+    padding-top: 150px;
+    padding-bottom: 170px;
   }
 
   #heroHead
@@ -3047,7 +3525,19 @@ html {
   {
     width: 160px;
     margin-top: -20px;
-    margin-left: 0px;
+    margin-left: 30px;
+  }
+
+  #proQ
+  {
+    width: 250px;
+  }
+
+  #PquoteRow
+  {
+    width: 190px;
+    margin-top: -20px;
+    margin-left: 120px;
   }
 
   #startQ
@@ -3072,11 +3562,30 @@ html {
     background: url(../images/a_man_holds_fish_3.jpg) no-repeat;
   }
 
+  #projectBot
+  {
+    width: 560px;
+    height: 524px;
+    background: url(../images/water_clearing_3.jpg) no-repeat;
+  }
+
+  #capBotT
+  {
+    margin-top: -170px;
+  }
+
   #latestTopI
   {
     width: 560px;
     height: 524px;
     background: url(../images/trout_eggs_3_.jpg) no-repeat;
+  }
+
+  #capTopI
+  {
+    width: 570px;
+    height: 524px;
+    background: url(../images/trout_fish_3.jpg) no-repeat;
   }
 
   #latestBotI
@@ -3086,9 +3595,22 @@ html {
     background: url(../images/traa_gear_3.jpg) no-repeat;
   }
 
+  #capBotI
+  {
+    width: 571px;
+    height: 524px;
+    background: url(../images/trout_baby_3.jpg) no-repeat;
+  }
+
   #fundForm
   {
     margin-top: 550px;
+  }
+
+  #CandP
+  {
+    margin-top: 68px;
+    width: 600px;
   }
 }
 
@@ -3110,9 +3632,19 @@ html {
     margin-right: 100px;
   }
 
+  #capTopT
+  {
+    margin-left: 100px;
+  }
+
   #latestBotT
   {
     margin-left: 100px;
+  }
+
+  #capBotT
+  {
+    margin-right: 100px;
   }
 
   .showFund
@@ -3305,6 +3837,7 @@ html {
     font-size: 15px;
     line-height: 20px;
   }
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -3314,6 +3847,17 @@ html {
     padding: 52px 44px 81px 29px;
     margin-left: 212px;
     margin-top: -100px;
+  }
+
+  #fundP
+  {
+    font-size: 15px;
+  }
+
+  #proFp
+  {
+    font-size: 15px;
+    line-height: 25px !important;
   }
 
   #fundBut
@@ -3334,7 +3878,12 @@ html {
     line-height: 35px !important;
   }
 
-  #fundBot
+  .blueT
+  {
+    font-size: 15px;
+  }
+
+  #fundBot, #projectBot
   {
     margin-right: 200px;
     margin-bottom: 100px;
@@ -3349,12 +3898,37 @@ html {
     margin-top: 87px;
   }
 
+  #capTopT
+  {
+    width: 385px;
+    padding: 44px 57px 44px 30px;
+    margin-left: 170px;
+    margin-top: 87px;
+  }
+
   #latestBotT
   {
     width: 382px;
     padding: 36px 40px 40px 32px;
     margin-left: 182px;
     margin-top: -185px;
+  }
+
+  #capBotT
+  {
+    width: 382px;
+    padding: 36px 40px 40px 32px;
+    margin-right: 182px;
+  }
+
+  .CaPBB
+  {
+    width: 140px;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 15px;
+    margin-left: 125px;
+    margin-top: 10px;
   }
 
   #merchBut
@@ -3367,9 +3941,20 @@ html {
     margin-left: 222px;
   }
 
+  #capTopI
+  {
+    margin-right: 222px;
+    margin-top: -200px;
+  }
+
   #latestBotI
   {
     margin-right: 182px;
+  }
+
+  #capBotI
+  {
+    margin-left: 182px;
   }
 
   #bannerBox
@@ -3424,4 +4009,77 @@ html {
   {
     margin-right: 180px;
   }
+
+  #wallH
+  {
+    background: url(../images/big_trout_fish_3.jpg) no-repeat;
+  }
+
+  #streamR
+  {
+    background: url(../images/forests_3.jpg) no-repeat;
+  }
+
+  #archivesRow
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    margin-top: 67px;
+    margin-bottom: 90px;
+  }
+
+  .archivesItem
+  {
+    width: 372px;
+    height: 380px;
+    margin-bottom: 30px;
+  }
+
+  .archivesItem h3
+  {
+    margin-top: 300px;
+    font-size: 20px;
+    width: 230px;
+    margin-left: 70px;
+  }
+
+  #eggs
+  {
+    background: url(../images/eggs_chart_3.png) no-repeat;
+    width: 369px;
+    height: 288px;
+  }
+
+  #membershipsChart
+  {
+    background: url(../images/memberships_chart_3.png) no-repeat;
+    width: 366px;
+    height: 274px;
+  }
+
+  #electro
+  {
+   background: url(../images/electro_fishing_chart_3.png) no-repeat;
+   width: 348px;
+    height: 261px;
+  }
+
+  #charts
+  {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 835px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  #capTopI
+  {
+    margin-top: -300px;
+  }
+
+
 }
