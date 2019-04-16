@@ -51,7 +51,7 @@ h3
   color: #9abd4b;
   letter-spacing: 0.6px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .blueT
@@ -362,10 +362,15 @@ html {
 {
   display: block;
   padding: 10px 0 10px 0;
-  color: #5d7132;
+  color: #434345;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
+}
+
+#mainNav li a:hover
+{
+  color: #5d7132;
 }
 
 #mainNav li:first-child
@@ -388,6 +393,11 @@ html {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
+}
+
+#burgerMem:hover
+{
+  background-color: #2b96d8;
 }
 
 #burgerCon p
@@ -783,12 +793,14 @@ html {
   margin-left: auto;
   margin-right: 13px;
   margin-bottom: 5px;
+  z-index: 999;
 }
 
 #topButton p
 {
   font-size: 12.32px;
   line-height: 16px;
+  z-index: 999;
 }
 
 #mainFooter
@@ -1194,7 +1206,7 @@ html {
   {
       display:block;
       content: '';
-      border-bottom: solid 3px #9abd4b;
+      border-bottom: solid 3px #5d7132;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
       transform-origin:100% 50%
@@ -1206,7 +1218,7 @@ html {
 
   #mainNav ul li a:hover
   {
-    color: #9abd4b;
+    color: #5d7132;
   }
 
   #burgerMenu
@@ -1796,6 +1808,13 @@ html {
   background: url(../images/a_man_holds_fish_1.jpg) no-repeat;
 }
 
+#newslBot
+{
+  height: 380px;
+  margin-bottom: 140px;
+  background: url(../images/red_transparent_fish_1.jpg) no-repeat;
+}
+
 #fundPage
 {
   display: none;
@@ -2129,7 +2148,7 @@ html {
   box-shadow: 0px 0px 4px 0px #cfcdd2;
 }
 
-#halfGrey
+#halfGrey, #pastEHalf
 {
   background: #f5f5f5;
   width: 100%;
@@ -2137,6 +2156,16 @@ html {
   position: absolute;
   z-index: -1;
   margin-top: 105px;
+}
+
+#pastEvents
+{
+  margin-top: 30px;
+}
+
+.pastHs
+{
+  margin-bottom: 20px;
 }
 
 .events img
@@ -2483,6 +2512,14 @@ html {
   background: url(../images/blue_river_1.jpg) no-repeat;
 }
 
+#newslettersHero
+{
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/tree_river_1.jpg) no-repeat;
+}
+
 #projectBot
 {
   height: 380px;
@@ -2604,6 +2641,7 @@ html {
 
 #charts
 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2627,15 +2665,199 @@ html {
 #membershipsChart
 {
   background: url(../images/memberships_chart_1.png) no-repeat;
-  width: 283px;
+  width: 263px;
   height: 202px;
 }
 
 #electro
 {
  background: url(../images/electro_fishing_chart_1.png) no-repeat;
- width: 269px;
+ width: 265px;
   height: 204px;
+}
+
+#dataHalf
+{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  margin-top: 220px;
+  z-index: -44px;
+  background: #f5f5f5;
+}
+
+.greenE
+{
+  background: #9abd4b;
+}
+
+.greenE a
+{
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-left: -15px;
+  margin-top: 80px;
+}
+
+#pastPano
+{
+  background: url(../images/fishing_1.jpg) no-repeat;
+  height: 180px;
+  padding-top: 25px;
+  margin-top: 40px;
+}
+
+.pastPp 
+{
+  text-align: left;
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-left: 20px !important;
+  margin-bottom: 20px;
+}
+
+.pastPh2
+{
+  font-size: 15px;
+}
+
+.pastP
+{
+  font-size: 12px;
+  width: 176px;
+  line-height: 15px;
+}
+
+.pastEBut
+{
+  top: 440px !important;
+}
+
+#newslH2
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+#greenBan
+{
+  margin-top: 52px;
+  width: 100%;
+  background-color: #9abd4b;
+  height: 92px;
+}
+
+#newslettersArch
+{
+  margin-right: 25px;
+  margin-left: 25px;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 4px 0px #cfcdd2;
+  padding: 20px 8px 20px 8px;
+}
+
+#newslettersArch p
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+#newslettersRow
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 224px;
+}
+
+.newslettersCol
+{
+  display: flex;
+  flex-direction: column;
+  width: 91px;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.newslettersCol h4
+{
+  color: #9abd4b;
+  font-size: 13px;
+  margin-bottom: 11px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+}
+
+.newslettersCol a
+{
+  color: #4d4747;
+  font-size: 12px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-bottom: 4px;
+}
+
+.newslettersCol a:hover
+{
+  color: #2b96d8;
+}
+
+.linesH
+{
+  width: 45px;
+  border-top: 1px solid lightgrey;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mobileH
+{
+  position: absolute;
+  width: 140px;
+  margin-top: 375px;
+  border-top: 2px solid lightgrey;
+}
+
+.linesV
+{
+  height: 346px;
+  border-left: 2px solid lightgrey;
+  margin-top: 16px;
+}
+
+.linesV:nth-child(4)
+{
+  display: none;
+}
+
+#newslNote
+{
+  text-align: left;
+  letter-spacing: 0 !important;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#newslNote a
+{
+  color: #1f75aa;
 }
 
 /*****************************************************MEDIAQ*/
@@ -2651,9 +2873,53 @@ html {
     background: url(../images/blue_river_2.jpg) no-repeat;
   }
 
+  #newslettersHero
+  {
+    background: url(../images/tree_river_2.jpg) no-repeat;
+  }
+
+  #pastPano
+  {
+    background: url(../images/fishing_2.jpg) no-repeat;
+    height: 205px;
+    padding-top: 50px;
+    margin-top: 40px;
+  }
+
+  .pastPp 
+  {
+    text-align: left;
+    color: #fff;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin-left: 20px !important;
+    margin-bottom: 20px;
+  }
+
+  .pastPh2
+  {
+    font-size: 17px;
+  }
+
+  .pastP
+  {
+    font-size: 14px;
+    width: 200px;
+    line-height: 15px;
+  }
+
+  .pastEBut
+  {
+    top: 490px !important;
+  }
+
   #fundBot
   {
     background: url(../images/a_man_holds_fish_2.jpg) no-repeat;
+  }
+
+  #newslBot
+  {
+    background: url(../images/red_transparent_fish_2.jpg) no-repeat;
   }
 
   #projectBot
@@ -2695,10 +2961,17 @@ html {
     padding-bottom: 20px;
   }
 
-  #projectHero
+  #projectHero, #newslettersHero
   {
     padding-top: 70px;
     padding-bottom: 90px;
+  }
+
+  #pastPano
+  {
+    height: 225px;
+    padding-top: 80px;
+    margin-top: 70px;
   }
 
   #greenQuote
@@ -2708,12 +2981,18 @@ html {
     margin-top: 20px;
   }
 
+  #greenBan
+  {
+    margin-top: 80px;
+    opacity: 0.87;
+  }
+
   #fundraising
   {
     margin-top: -10px;
   }
 
-  #fundBot
+  #fundBot, #projectBot
   {
     position: relative;
     margin-left: auto;
@@ -2722,13 +3001,13 @@ html {
     margin-bottom: 40px;
   }
 
-  #projectBot
+  #newslBot
   {
     position: relative;
     margin-left: auto;
     width: 446px;
     height: 415px;
-    margin-bottom: 40px;
+    margin-bottom: 130px;
   }
 
   #latestTopI
@@ -2797,15 +3076,33 @@ html {
   {
     margin-left: 80px;
   }
+
+  .pastPp 
+  {
+    margin-left: 40px !important;
+    margin-bottom: 20px;
+  }
+
+  .pastPh2
+  {
+    font-size: 16px;
+  }
+
+  .pastP
+  {
+    font-size: 14px;
+    width: 210px;
+  }
+
+  .pastEBut
+  {
+    top: 570px !important;
+  }
+
 }
 
 @media screen and (min-width: 550px) {
-  #fundBot
-  {
-    right: 20px;
-  }
-
-  #projectBot
+  #fundBot, #newslBot, #projectBot
   {
     right: 20px;
   }
@@ -2822,9 +3119,30 @@ html {
 }
 
 @media screen and (min-width: 650px) {
-  #fundBot, #projectBot
+  #fundBot, #projectBot, #newslBot
   {
     right: 40px;
+  }
+
+  #newslettersArch p
+  {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .mobileH
+  {
+    display: none;
+  }
+
+  .linesV:nth-child(4)
+  {
+    display: block;
+  }
+
+  #newslettersRow
+  {
+    width: 520px;
   }
 
   #fundraising
@@ -3041,6 +3359,41 @@ html {
     line-height: 35px;
     width: 300px;
   }
+
+  #greenBan
+  {
+    display: none;
+  }
+
+  #pastPano
+  {
+    height: 267px;
+    padding-top: 85px;
+    margin-top: 62px;
+  }
+
+  .pastPp 
+  {
+    margin-left: 60px !important;
+    margin-bottom: 35px;
+  }
+
+  .pastPh2
+  {
+    font-size: 18px;
+  }
+
+  .pastP
+  {
+    font-size: 15px;
+    width: 500px;
+    line-height: 20px;
+  }
+
+  .pastEBut
+  {
+    top: 620px !important;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -3068,6 +3421,35 @@ html {
   {
     margin-top: 450px;
   }
+
+  #pastPano
+  {
+    height: 392px;
+    padding-top: 95px;
+    margin-top: 92px;
+  }
+
+  .pastPp 
+  {
+    margin-left: 60px !important;
+    margin-bottom: 35px;
+  }
+
+  .pastPh2
+  {
+    font-size: 25px;
+  }
+
+  .pastP
+  {
+    font-size: 20px;
+    width: 500px;
+  }
+
+  .pastEBut
+  {
+    top: 770px !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3077,10 +3459,22 @@ html {
     padding-bottom: 153px;
   }
 
-  #projectHero
+  #projectHero, #newslettersHero
   {
     padding-top: 112px;
     padding-bottom: 161px;
+  }
+
+  #pastPano
+  {
+    height: 357px;
+    padding-top: 105px;
+    margin-top: 112px;
+  }
+
+  .pastEBut
+  {
+    top: 750px !important;
   }
 
   .proH1
@@ -3135,7 +3529,7 @@ html {
     padding-top: 15px;
   }
 
-  #fundBot, #projectBot
+  #fundBot, #projectBot, #newslBot
   {
     margin-right: 60px;
     margin-top: -55px;
@@ -3451,6 +3845,62 @@ html {
     margin-top: 69px;
   }
 
+  #newslettersArch
+  {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  #newslettersArch p
+  {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 25px;
+  }
+
+  #newslettersRow
+  {
+    width: 610px;
+  }
+
+  .newslettersCol
+  {
+    width: 111px;
+    margin-top: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .newslettersCol h4
+  {
+    font-size: 16px;
+  }
+
+  .newslettersCol a
+  {
+    font-size: 15px;
+  }
+
+  .linesH
+  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .linesV
+  {
+    height: 386px;
+    margin-top: 26px;
+  }
+
+  #newslNote
+  {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -3464,6 +3914,11 @@ html {
     background: url(../images/blue_river_3.jpg) no-repeat;
   }
 
+  #newslettersHero
+  {
+    background: url(../images/tree_river_3.jpg) no-repeat;
+  }
+
   #aboutHero
   {
     padding-top: 156px;
@@ -3471,7 +3926,15 @@ html {
     background: url(../images/hold_trout_fish_3.jpg) no-repeat;
   }
 
-  
+  #pastPano
+  {
+    background: url(../images/fishing_3.jpg) no-repeat;
+    height: 300px;
+    padding-top: 125px;
+    margin-top: 112px;
+  }
+
+
 
 }
 
@@ -3482,7 +3945,7 @@ html {
     padding-bottom: 160px;
   }
 
-  #projectHero
+  #projectHero, #newslettersHero
   {
     padding-top: 150px;
     padding-bottom: 170px;
@@ -3562,6 +4025,13 @@ html {
     background: url(../images/a_man_holds_fish_3.jpg) no-repeat;
   }
 
+  #newslBot
+  {
+    width: 560px;
+    height: 524px;
+    background: url(../images/red_transparent_fish_3.jpg) no-repeat;
+  }
+
   #projectBot
   {
     width: 560px;
@@ -3612,6 +4082,25 @@ html {
     margin-top: 68px;
     width: 600px;
   }
+
+  #pastPano
+  {
+    height: 392px;
+    padding-top: 145px;
+    margin-top: 112px;
+  }
+
+  .pastEBut
+  {
+    top: 860px !important;
+  }
+
+  #newslettersArch
+  {
+    width: 769px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -3623,6 +4112,65 @@ html {
   #checkArea
   {
     margin-left: 170px;
+  }
+
+  #newslettersArch
+  {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  #newslettersArch p
+  {
+    line-height: 30px;
+  }
+
+  #newslettersArch p:nth-child(2)
+  {
+    width: 585px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #newslettersRow
+  {
+    width: 660px;
+  }
+
+  .newslettersCol
+  {
+    width: 121px;
+    margin-top: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .newslettersCol h4
+  {
+    font-size: 18px;
+  }
+
+  .newslettersCol a
+  {
+    font-size: 16px;
+  }
+
+  .linesH
+  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .linesV
+  {
+    height: 486px;
+    margin-top: 26px;
+  }
+
+  #newslNote
+  {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
   }
 }
 
@@ -3849,6 +4397,11 @@ html {
     margin-top: -100px;
   }
 
+  .pastEBut
+  {
+    top: 890px !important;
+  }
+
   #fundP
   {
     font-size: 15px;
@@ -3883,7 +4436,7 @@ html {
     font-size: 15px;
   }
 
-  #fundBot, #projectBot
+  #fundBot, #projectBot, #newslBot
   {
     margin-right: 200px;
     margin-bottom: 100px;
@@ -4081,5 +4634,8 @@ html {
     margin-top: -300px;
   }
 
-
+  .pastEBut
+  {
+    top: 900px !important;
+  }
 }
