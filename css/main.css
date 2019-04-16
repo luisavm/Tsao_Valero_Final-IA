@@ -1880,6 +1880,17 @@ html {
   background: url(../images/a_man_holds_fish_1.jpg) no-repeat;
 }
 
+#contactBot
+{
+  height: 248px;
+  background: url(../images/raindow_trout_fish_1.jpg) no-repeat;
+}
+
+.moreBot
+{
+  margin-bottom: 60px;
+}
+
 #newslBot
 {
   height: 380px;
@@ -2616,15 +2627,29 @@ html {
 
 #linksHero
 {
-   padding-top: 98px;
+  padding-top: 68px;
   display: flex;
   flex-direction: column;
   background: url(../images/tree_small_ship_1.jpg) no-repeat;
 }
 
+#contactHero
+{
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/trees_river_people_1.jpg) no-repeat;
+}
+
 .linkPage
 {
   margin-top: 32px !important;
+  z-index: 1;
+}
+
+.conPage
+{
+  margin-top: 10px !important;
   z-index: 1;
 }
 
@@ -2856,6 +2881,18 @@ html {
   color: #fff;
 }
 
+#conH2
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 10px;
+  color: #fff;
+}
+
 #greenBan
 {
   margin-top: 52px;
@@ -3081,6 +3118,292 @@ html {
   z-index: -1;
 }
 
+#conRow
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactL, #contactR
+{
+  width: 270px;
+  height: 553px;
+  z-index: 2;
+  margin-top: 40px;
+  background-color: #fff;
+  filter: drop-shadow(0 0 0.5rem lightgrey);
+  padding: 35px 10px 10px 20px;
+}
+
+#contactR
+{
+  margin-bottom: 190px;
+}
+
+#contactL p
+{
+  color: #4d4747;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+  line-height: 25px;
+  margin-top: 21px;
+  word-spacing: 2px;
+}
+
+#contactText p
+{
+  color: #4d4747;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 26px;
+}
+
+#hearYou
+{
+  color: #9abd4b;
+}
+
+#contactForm
+{
+  font-size: 16px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#contactM
+{
+  margin-top: 15px;
+}
+
+label
+{
+  margin-top: 17px;
+  color: #5d7132;
+}
+
+input
+{
+  background-color: transparent;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+    height: 25px;
+    margin-left: -4px;
+    padding-left: 8px;
+  border-bottom: 1px solid grey;
+}
+
+#message
+{
+  margin-top: 37px;
+  color: #5d7132;
+}
+
+textarea
+{
+  background-color: transparent;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+    margin-left: -4px;
+    padding-left: 8px;
+  width: 230px;
+  height: 100px;
+  border: 1px solid grey;
+  margin-top: 15px;
+}
+
+#contactSubmit
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background-color: #1f75aa;
+  width: 110px;
+  height: 40px;
+  border: none;
+  margin-top: 30px;
+  margin-left: 60px;
+  color: #fff;
+}
+
+#contactSubmit:hover
+{
+  background-color: #2b96d8;
+}
+
+/*#contactLine*/
+{
+  height: 816px;
+  border-left: 3px solid lightgrey;
+  margin-top: 30px;
+}
+
+.contactHead
+{
+  color: #5d7132 !important;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 46px;
+}
+
+#emailusAt p
+{
+  color: #4d4747;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+#checkout a
+{
+  color: #4d4747;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#checkout a:hover
+{
+  color: #2b96d8;
+}
+
+#checkout p
+{
+  margin-bottom: 10px;
+}
+
+#mail h3
+{
+  color: #5d7132;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 46px;
+}
+
+#mail p
+{
+  color: #4d4747;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#italics
+{
+  font-style: italic;
+  line-height: 24px;
+  text-align: left;
+}
+
+#visitHead
+{
+  color: #5d7132 !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  margin-top: 46px !important;
+}
+
+#visitUs p
+{
+  color: #4d4747;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#mapArea
+{
+  border-style: none;
+  width: 260px;
+  height: 173px;
+}
+
+
+#GMTop
+{
+  width: 232px;
+  height: 369px;
+  background-color: #FFF;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px 20px 20px;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.3rem lightgrey);
+}
+
+#GMTop p
+{
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#GMGTop
+{
+  position: absolute;
+  width: 100%;
+  height: 524px;
+  margin-top: 164px;
+  z-index: -1;
+  background-color: #9abd4b;
+}
+
+#GMBot
+{
+  width: 270px;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  z-index: 2;
+  margin-top: 20px;
+  filter: drop-shadow(0 0 0.3rem lightgrey);
+}
+
+#genNote
+{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #1f75aa;
+  font-size: 20px;
+  margin-left: 26px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+#genIta
+{
+  color: #4d4747;
+  font-size: 15px;
+  text-align: left;
+  font-style: italic;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+#GMGtop
+{
+  background: #9abd4b;
+  width: 100%;
+  height: 657px;
+  position: absolute;
+  margin-top: -330px;
+  z-index: -1;
+}
+
+
 
 /*****************************************************MEDIAQ*/
 
@@ -3098,6 +3421,11 @@ html {
   #linksHero
   {
     background: url(../images/tree_small_ship_2.jpg) no-repeat;
+  }
+
+  #contactHero
+  {
+    background: url(../images/trees_river_people_2.jpg) no-repeat;
   }
 
   #newslettersHero
@@ -3142,6 +3470,11 @@ html {
   #fundBot
   {
     background: url(../images/a_man_holds_fish_2.jpg) no-repeat;
+  }
+
+  #contactBot
+  {
+    background: url(../images/raindow_trout_fish_2.jpg) no-repeat;
   }
 
   #newslBot
@@ -3203,7 +3536,7 @@ html {
     padding-bottom: 20px;
   }
 
-  #projectHero, #newslettersHero, #linksHero
+  #projectHero, #newslettersHero, #linksHero, #contactHero
   {
     padding-top: 70px;
     padding-bottom: 90px;
@@ -3239,7 +3572,7 @@ html {
     margin-top: -20px;
   }
 
-  #fundBot, #projectBot
+  #fundBot, #projectBot, #contactBot
   {
     position: relative;
     margin-left: auto;
@@ -3283,12 +3616,21 @@ html {
     margin-right: auto;
   }
 
+  #GMGtop
+  {
+    width: 445px;
+    height: 509px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #latestBotT
   {
     margin-top: -70px;
   }
 
-  #capBotT
+  #capBotT, #GMBot
   {
     margin-top: -70px;
   }
@@ -3370,7 +3712,7 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  #fundBot, #newslBot, #projectBot, #linksTopI
+  #fundBot, #newslBot, #projectBot, #linksTopI, #contactBot
   {
     right: 20px;
   }
@@ -3387,7 +3729,9 @@ html {
 }
 
 @media screen and (min-width: 650px) {
-  #fundBot, #projectBot, #newslBot, #linksTopI
+ 
+
+  #fundBot, #projectBot, #newslBot, #linksTopI, #contactBot
   {
     right: 40px;
   }
@@ -3423,7 +3767,7 @@ html {
     margin-right: 50px;
   }
 
-  #capTopT
+  #capTopT, #GMTop
   {
     margin-left: 50px;
   }
@@ -3443,7 +3787,7 @@ html {
     margin-right: 50px;
   }
 
-  #capBotT
+  #capBotT, #GMBot
   {
     margin-right: 50px;
   }
@@ -3456,6 +3800,11 @@ html {
   #capTopI
   {
     margin-top: -300px;
+  }
+
+  #GMGtop
+  {
+    margin-top: -400px;
   }
 
   #latestBotI
@@ -3681,7 +4030,7 @@ html {
     margin-left: 80px;
   }
 
-  #capTopI
+  #capTopI, #GMGtop
   {
     margin-right: 80px;
   }
@@ -3737,6 +4086,83 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+   #GMGbot
+  {
+    position: absolute;
+    z-index: 1;
+    margin-left: 143px;
+    margin-top: -250px;
+    width: 532px;
+    height: 311px;
+    background-color: #5d7132;
+  }
+
+  #conRow
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.5rem lightgrey);
+    margin-top: 80px;
+  }
+
+  #contactL, #contactR
+  {
+    width: 300px;
+    height: 770px;
+    margin-top: 40px;
+    filter: none;
+  }
+
+  #contactL
+  {
+    margin-top: -160px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  #contactR
+  {
+    margin-bottom: 200px;
+    padding: 20px 20px 20px 40px 
+  }
+
+  #contactLine
+  {
+    height: 500px;
+    border-right: 1px solid lightgrey;
+    margin-top: 80px;
+  }
+
+  #contactM
+  {
+    margin-top: 25px;
+  }
+
+  label
+  {
+    margin-top: 25px;
+  }
+
+  #message
+  {
+    margin-top: 45px;
+  }
+
+  textarea
+  {
+    margin-left: -4px;
+    padding-left: 8px;
+    width: 290px;
+    height: 200px;
+    margin-top: 25px;
+  }
+
+  #contactSubmit
+  {
+    width: 150px;
+    margin-left: 70px;
+  }
+
   #linksNote
   {
     width: 383px;
@@ -3786,7 +4212,7 @@ html {
     padding-bottom: 153px;
   }
 
-  #projectHero, #newslettersHero, #linksHero
+  #projectHero, #newslettersHero, #linksHero, #contactHero
   {
     padding-top: 112px;
     padding-bottom: 161px;
@@ -3864,7 +4290,12 @@ html {
     padding-top: 15px;
   }
 
-  #fundBot, #projectBot, #newslBot
+  #GMBot
+  {
+    margin-top: -170px;
+  }
+
+  #fundBot, #projectBot, #newslBot, #contactBot
   {
     margin-right: 60px;
     margin-top: -55px;
@@ -3884,7 +4315,7 @@ html {
     margin-right: 79px;
   }
 
-  #capTopT
+  #capTopT, #GMTop
   {
     width: 317px;
     padding: 34px 36px 20px 23px;
@@ -3914,6 +4345,12 @@ html {
     margin-top: -200px;
   }
 
+  #GMGtop
+  {
+    margin-right: 80px;
+    margin-top: -200px;
+  }
+
   #latestBotT
   {
     margin-left: 50px;
@@ -3928,7 +4365,7 @@ html {
     padding: 29px 35px 28px 41px;
   }
 
-  #capBotT
+  #capBotT, #GMBot
   {
     width: 300px;
     padding: 29px 35px 28px 41px;
@@ -4290,6 +4727,11 @@ html {
     background: url(../images/tree_small_ship_3.jpg) no-repeat;
   }
 
+  #contactHero
+  {
+    background: url(../images/trees_river_people_3.jpg) no-repeat;
+  }
+
   #newslettersHero
   {
     background: url(../images/tree_river_3.jpg) no-repeat;
@@ -4321,7 +4763,7 @@ html {
     padding-bottom: 160px;
   }
 
-  #projectHero, #newslettersHero, #linksHero
+  #projectHero, #newslettersHero, #linksHero, #contactHero
   {
     padding-top: 150px;
     padding-bottom: 170px;
@@ -4379,6 +4821,18 @@ html {
     margin-left: 120px;
   }
 
+  .conFund p
+  {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+
+  .conFund
+  {
+    margin-top: -50px !important;
+    padding-bottom: 30px !important;
+  }
+
   #startQ
   {
     background: url(../images/open_quote_3.png) no-repeat;
@@ -4399,6 +4853,13 @@ html {
     width: 560px;
     height: 524px;
     background: url(../images/a_man_holds_fish_3.jpg) no-repeat;
+  }
+
+  #contactBot
+  {
+    width: 568px;
+    height: 524px;
+    background: url(../images/raindow_trout_fish_3.jpg) no-repeat;
   }
 
   #newslBot
@@ -4594,6 +5055,24 @@ html {
     margin-left: 100px;
   }
 
+  #GMTop
+  {
+    margin-left: 170px;
+    margin-top: 90px;
+  }
+
+  .gmp
+  {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #genIta
+  {
+    line-height: 25px;
+    margin-top: 30px;
+  }
+
   #latestBotT
   {
     margin-left: 100px;
@@ -4604,7 +5083,7 @@ html {
     margin-right: 100px;
   }
 
-  #capBotT
+  #capBotT, #GMBot
   {
     margin-right: 100px;
   }
@@ -4812,7 +5291,7 @@ html {
   {
     right: 210px;
   }
-  
+
   #linksCol div:nth-child(2)
   {
     width: 390px;
@@ -4896,7 +5375,7 @@ html {
     font-size: 15px;
   }
 
-  #fundBot, #projectBot, #newslBot
+  #fundBot, #projectBot, #newslBot, #contactBot
   {
     margin-right: 200px;
     margin-bottom: 100px;
@@ -4917,7 +5396,7 @@ html {
     margin-top: 87px;
   }
 
-  #capTopT
+  #capTopT, #GMTop
   {
     width: 385px;
     padding: 44px 57px 44px 30px;
@@ -4954,6 +5433,13 @@ html {
     margin-right: 182px;
   }
 
+  #GMBot
+  {
+    width: 382px;
+    padding: 36px 30px 30px 22px;
+    margin-right: 182px;
+  }
+
   .CaPBB
   {
     width: 140px;
@@ -4978,6 +5464,12 @@ html {
   {
     margin-right: 222px;
     margin-top: -200px;
+  }
+
+  #GMGtop
+  {
+    margin-right: 222px;
+    margin-top: -300px;
   }
 
   #latestBotI
@@ -5113,6 +5605,11 @@ html {
   #capTopI
   {
     margin-top: -300px;
+  }
+
+  #GMGtop
+  {
+    margin-top: -350px;
   }
 
   .pastEBut
