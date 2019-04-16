@@ -2923,7 +2923,7 @@ html {
   height: 400px;
   position: absolute;
   margin-top: 220px;
-  z-index: -44px;
+  z-index: -44;
   background: #f5f5f5;
 }
 
@@ -3341,13 +3341,6 @@ textarea
 #contactSubmit:hover
 {
   background-color: #2b96d8;
-}
-
-/*#contactLine*/
-{
-  height: 816px;
-  border-left: 3px solid lightgrey;
-  margin-top: 30px;
 }
 
 .contactHead
