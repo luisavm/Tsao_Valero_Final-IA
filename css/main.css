@@ -8,7 +8,7 @@
 
 .sections
 {
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
   position: relative;
 }
 
@@ -80,8 +80,8 @@ html {
 {
 	/*width: 960px;*/
 	margin: 0 auto;
-	border-left: 1px solid lightgrey;
-	border-right: 1px solid lightgrey;
+	/*border-left: 1px solid lightgrey;*/
+	/*border-right: 1px solid lightgrey;*/
 	max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -3251,8 +3251,8 @@ html {
 
 #contactL p
 {
-  color: #4d4747;
-  font-size: 20px;
+  color: #9abd4b;
+  font-size: 25px;
   text-align: left;
   margin-left: 10px;
   line-height: 25px;
@@ -3263,10 +3263,10 @@ html {
 #contactText p
 {
   color: #4d4747;
-  font-size: 12px;
+  font-size: 16px;
   text-align: left;
   margin-left: 10px;
-  margin-top: 26px;
+  margin-top: 10px;
 }
 
 #hearYou
@@ -3281,6 +3281,11 @@ html {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+}
+
+#contactForm input::placeholder
+{
+  font-size: 14px;
 }
 
 #contactM
@@ -3336,6 +3341,7 @@ textarea
   margin-top: 30px;
   margin-left: 60px;
   color: #fff;
+  font-size: 14px;
 }
 
 #contactSubmit:hover
@@ -3348,7 +3354,12 @@ textarea
   color: #5d7132 !important;
   font-size: 17px;
   text-align: left;
-  margin-top: 46px;
+  margin-top: 30px;
+}
+
+#emailusAt
+{
+  margin-top: 34px;
 }
 
 #emailusAt p
@@ -3381,9 +3392,9 @@ textarea
 #mail h3
 {
   color: #5d7132;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
-  margin-top: 46px;
+  margin-top: 35px;
 }
 
 #mail p
@@ -3394,6 +3405,7 @@ textarea
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 20px;
 }
 
 #italics
